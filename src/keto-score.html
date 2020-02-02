@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Nutrita Premium"
+    })
+  </head>
+  <body>
+    @@include("partials/topnav.html")
+    @@include("partials/modals.html")
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content my-6">
+      <div class="container pt-5 pt-lg-6 mb-5">
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 col-lg-8 text-center">
+            <h1 class="display-2 d-none d-lg-block">Keto score</h1>
+            <h1 class="display-4 d-block d-lg-none">Keto score</h1>
+            <p class="lead text-muted mb-4">It tells you how likely a food or ingredient is to promote nutritional ketosis on a scale of 0 to 10.</p>
+            <h6 class="text-uppercase text-muted">Understanding Keto score labels</h6>
+            <span class="badge badge-soft-success mr-2">Good • 7 to 10</span> <span class="badge badge-soft-warning">Ok • 4 to 6</span> <span class="badge badge-soft-danger">Bad • > 0 to 3</span>
+          </div>
+        </div>
+      </div><!-- / .container -->
+      <!-- IDEA: Good Keto foods -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+
+
+            <div class="card mb-0">
+              <div class="card-header">
+                <h4 class="card-header-title">
+                  Food with a Keto score between <strong>7</strong> and <strong>10</strong>
+                </h4>
+              </div>
+              <div class="card-body p-0">
+                <div class="px-0 pb-2 mt-n1">
+                  <div class="progress rounded-0" style="height: 6px;">
+                    <div class="progress-bar rounded-0" role="progressbar" style="width: 100%; background: linear-gradient(90deg, rgb(230, 55, 87), rgb(246, 195, 67), rgb(0, 217, 126));" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="row justify-content-between text-secondary px-4">
+                    <div class="col">
+                    <small>0</small>
+                    </div>
+                    <div class="col text-center">
+                    <small>5</small>
+                    </div>
+                    <div class="col text-right">
+                    <small>10</small>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-group list-group-lg list-group-flush list">
+                  <a data-toggle="modal" href="#modalFood">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto pl-3">
+                          <span class="avatar avatar-lg">
+                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/liver.jpg" alt="..." class="avatar-img rounded">
+                          </span>
+                        </div>
+                        <div class="col-8 col-md-10 pl-1 pr-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                  <a data-toggle="modal" href="#getNutritaUnlimited">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto pl-3">
+                          <span class="avatar avatar-lg">
+                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/salmon.jpg" alt="..." class="avatar-img rounded">
+                          </span>
+                        </div>
+                        <div class="col-8 col-md-10 pl-1 pr-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                  <a data-toggle="modal" href="#modalFood">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto pl-3">
+                          <span class="avatar avatar-lg">
+                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/avocado.jpg" alt="..." class="avatar-img rounded">
+                          </span>
+                        </div>
+                        <div class="col-8 col-md-10 pl-1 pr-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- IDEA: food comparison -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-6 mb-lg-7">
+          <div class="col-12 col-lg-8 text-center">
+            <h1 class="display-3 d-none d-lg-block mb-6">Food with a Good <span class="text-secondary">vs</span> Bad Keto score</h1>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-12 col-lg-6 ml-lg-n4">
+            <div class="card mb-0">
+              <div class="header-body px-4">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <span class="card-avatar avatar avatar-xl mx-auto mt-n6">
+                      <img src="https://via.placeholder.com/88x88.png" alt="" class="avatar-img rounded">
+                    </span>
+                    <!-- Title -->
+                    <h1 class="header-title">
+                      Banana
+                    </h1>
+                    <h6 class="text-uppercase text-center text-muted my-2">
+                      PER 100G
+                    </h6>
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+              <div class="card-body p-4 pt-5">
+                <div class="row justify-content-center">
+
+                  <div class="col col-lg-10 text-center">
+                    <h1 class="mb-1">0 out of 10 Keto score <span class="badge badge-soft-danger">Bad</span></h1>
+                    <h2>4% protein</h2>
+                    <p class="lead text-secondary mb-5">Not a good choice for ketogenic diets</p>
+
+                  </div>
+                </div>
+                <div class="row justify-content-center mb-4 d-none">
+                  <div class="col-12 col-lg-10">
+                    <!-- Nutrient Score -->
+                    <div class="d-flex justify-content-between no-gutters">
+                      <p class="card-text small text-secondary mb-0">
+                      <img src="https://nutrita.app/static/media/outline-score-24px.54069296.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Nutrient Score <span class="badge badge-soft-success">Good</span>
+                      </p>
+                    </div>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">6/10</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr class="my-2">
+
+                    <div class="accordion pl-3" id="accordionExample">
+                      <div class="card border border-0 shadow-none mb-0">
+                        <div class="card-header border-0 p-0">
+                          <div class="text-secondary">
+                            <p class="card-text small text-secondary mb-0">
+                              <img src="https://nutrita.app/static/media/outline-blur_on-24px.5a38f67e.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">
+                               Protein Score <span class="badge badge-soft-success">Good</span>
+                            </p>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">9/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-2">
+                      <div class="card border border-0 shadow-none mb-0">
+                        <div class="card-header border-0 p-0">
+                          <div class="text-secondary">
+                            <p class="card-text small text-secondary mb-0">
+                              <img src="https://nutrita.app/static/media/outline-bubble_chart-24px.e7a989d4.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">
+                                Fatty Acids Score  <span class="badge badge-soft-danger">Bad</span>
+                            </p>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">1/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-2">
+                      <!-- Vitamins Score -->
+                      <div class="card border border-0 shadow-none mb-0">
+                        <div class="card-header border-0 p-0" id="headingOne">
+                          <a class="text-secondary" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <p class="card-text small text-secondary mb-0">
+                              <img src="https://nutrita.app/static/media/outline-flash_on-24px.91f2f048.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Vitamins Score
+                              <span class="badge badge-soft-warning">Ok</span>
+                            </p>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">5/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- Vitamins Sub Score -->
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body pl-3 pt-3 pr-0 pb-0 mb-0">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Vitamin A
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Vitamin A
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Vitamin A
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Minerals Score -->
+                      <div class="card border border-0 shadow-none mb-3">
+                        <div class="card-header p-0" id="headingTwo">
+                          <a class="text-secondary collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <p class="card-text small text-secondary mb-0">
+                            <img src="https://nutrita.app/static/media/outline-scatter_plot-24px.aa719f00.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Minerals Score <span class="badge badge-soft-success">Good</span>
+                            </p>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">9/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- Minerals Sub Score -->
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body pl-3 pt-3 pr-0 pb-0 mb-0">
+                            <!-- Mineral item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Calcium
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Zinc
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Selenium
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10">
+                    <h6 class="header-pretitle text-secondary">
+                      Reasons why banana has a bad Keto score
+                    </h6>
+                    <ul class="list-group list-group">
+                      <li class="list-group-item border-0 pl-0"><i class="fe fe-x h2 text-danger mb-0 mr-3"></i>Low in fat and high in carbs preventing ketogenesis.</li>
+                      <li class="list-group-item border-0 pl-0"><i class="fe fe-x h2 text-danger mb-0 mr-3"></i>High in simple sugars.</li>
+                      <li class="list-group-item border-0 pl-0"><i class="fe fe-x h2 text-danger mb-0 mr-3"></i>Bad for fat-loss and blood sugar control.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a class="text-white lead" href="#" data-toggle="modal" data-target="#modalFood">
+                <div class="card-footer bg-danger text-center">
+                  Full food details
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mt-lg-n6 order-first mb-7 mb-lg-0">
+            <div class="card mb-0">
+              <div class="header-body px-4">
+                <div class="row align-items-center">
+                  <div class="col text-center">
+                    <span class="card-avatar avatar avatar-xl mx-auto mt-n6">
+                      <img src="https://via.placeholder.com/88x88.png" alt="" class="avatar-img rounded">
+                    </span>
+
+                    <!-- Title -->
+                    <h1 class="header-title">
+                      Steak
+                    </h1>
+                    <h6 class="text-uppercase text-center text-muted my-2">
+                      PER 100G
+                    </h6>
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+              <div class="card-body p-4 pt-5">
+                <div class="row justify-content-center">
+
+                  <div class="col col-lg-10 text-center">
+                    <h1 class="mb-1">8 out of 10 Keto score <span class="badge badge-soft-success">Good</span></h1>
+                    <h2>64% protein</h2>
+                    <p class="lead text-secondary mb-5">A great staple fatty food for ketogenic diets</p>
+
+                  </div>
+                </div>
+                <div class="row justify-content-center mb-4 d-none">
+                  <div class="col-12 col-lg-10">
+                    <!-- Nutrient Score -->
+                    <div class="d-flex justify-content-between no-gutters">
+                      <p class="card-text small text-secondary mb-0">
+                      <img src="https://nutrita.app/static/media/outline-score-24px.54069296.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Nutrient Score <span class="badge badge-soft-success">Good</span>
+                      </p>
+                    </div>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">6/10</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr class="my-2">
+
+                    <div class="accordion pl-3" id="accordionExample">
+                      <div class="card border border-0 shadow-none mb-0">
+                        <div class="card-header border-0 p-0">
+                          <div class="text-secondary">
+                            <p class="card-text small text-secondary mb-0">
+                              <img src="https://nutrita.app/static/media/outline-blur_on-24px.5a38f67e.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">
+                               Protein Score <span class="badge badge-soft-success">Good</span>
+                            </p>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">9/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-2">
+                      <div class="card border border-0 shadow-none mb-0">
+                        <div class="card-header border-0 p-0">
+                          <div class="text-secondary">
+                            <p class="card-text small text-secondary mb-0">
+                              <img src="https://nutrita.app/static/media/outline-bubble_chart-24px.e7a989d4.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">
+                                Fatty Acids Score  <span class="badge badge-soft-danger">Bad</span>
+                            </p>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">1/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-2">
+                      <!-- Vitamins Score -->
+                      <div class="card border border-0 shadow-none mb-0">
+                        <div class="card-header border-0 p-0" id="headingOne">
+                          <a class="text-secondary" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <p class="card-text small text-secondary mb-0">
+                              <img src="https://nutrita.app/static/media/outline-flash_on-24px.91f2f048.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Vitamins Score
+                              <span class="badge badge-soft-warning">Ok</span>
+                            </p>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">5/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- Vitamins Sub Score -->
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body pl-3 pt-3 pr-0 pb-0 mb-0">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Vitamin A
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Vitamin A
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Vitamin A
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Minerals Score -->
+                      <div class="card border border-0 shadow-none mb-3">
+                        <div class="card-header p-0" id="headingTwo">
+                          <a class="text-secondary collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <p class="card-text small text-secondary mb-0">
+                            <img src="https://nutrita.app/static/media/outline-scatter_plot-24px.aa719f00.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Minerals Score <span class="badge badge-soft-success">Good</span>
+                            </p>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">9/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- Minerals Sub Score -->
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body pl-3 pt-3 pr-0 pb-0 mb-0">
+                            <!-- Mineral item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Calcium
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Zinc
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                            <!-- Vitamin item -->
+                            <div class="d-flex justify-content-between no-gutters">
+                              <p class="card-text small text-secondary mb-0">
+                                Selenium
+                              </p>
+                              <div class="d-flex justify-content-end">
+                                <p class="card-text small text-secondary mb-0">
+                                  13µg
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">24% DV</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-3">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10">
+                    <h6 class="header-pretitle text-secondary">
+                      Reasons why a steak has a good Keto score
+                    </h6>
+                    <ul class="list-group list-group">
+                      <li class="list-group-item border-0 pl-0"><i class="fe fe-check h2 text-success mb-0 mr-3"></i>High in healthy fats allowing ketogenesis.</li>
+                      <li class="list-group-item border-0 pl-0"><i class="fe fe-check h2 text-success mb-0 mr-3"></i>Zero carbs with lots of high-quality protein.</li>
+                      <li class="list-group-item border-0 pl-0"><i class="fe fe-check h2 text-success mb-0 mr-3"></i>Excellent for fat-loss, blood sugar control and building muscle.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a class="text-white lead" href="#" data-toggle="modal" data-target="#modalFood">
+                <div class="card-footer bg-success text-center">
+                  Full food details
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- IDEA: left text component -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h1 class="display-3 d-none d-lg-block">Who is it for?</h1>
+            <h1 class="d-block d-lg-none text-center">Who is it for?</h1>
+            <p class="lead text-secondary">
+              Our Keto score is for anyone on a ketogenic diet who wants a clear answer to the question <i>Is it keto?</i> It also helps people struggling to understand the role of protein in ketogenic diets - which admittedly can be complicated.
+            </p>
+            <p class="lead text-secondary">
+              Our Keto score and its simple labels provide answers to all of these questions, making it easier than ever to follow your well-formulated ketogenic diet.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 d-flex order-first order-lg-last mb-5 mb-lg-0">
+            <img class="d-block w-75 mx-auto align-self-center" src="assets/img/illustrations/undraw_in_thought_gjsf.svg" alt="Chart with a woman standing next to it">
+          </div>
+        </div>
+      </div><!-- / .container -->
+      <!-- IDEA: right text component -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+            <img class="d-block w-75 mx-auto align-self-center" src="assets/img/illustrations/undraw_creative_team_r90h.svg" alt="In thought process">
+          </div>
+          <div class="col-12 col-lg-6">
+            <h1 class="display-3 d-none d-lg-block">How does it work?</h1>
+            <h1 class="d-block d-lg-none text-center">How does it work?</h1>
+            <p class="lead text-secondary">
+              Our Keto score is the first of its kind, developed by Nutrita’s team of scientists and engineers who took a deep dive into metabolism and nutrition. The score is derived from clinical studies measuring hormonal changes after people have eaten certain foods.
+            </p>
+            <p class="lead text-secondary">
+              The best way to use the Keto score is to use it alongside our Nutrient density score. Why is that? Using both scores allows you to follow a well-formulated ketogenic diet, which is by definition nutrient dense and ketogenic. You get the best of both worlds.
+            </p>
+          </div>
+        </div>
+      </div><!-- / .container -->
+      <!-- IDEA: CTA cards -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <div class="card mb-0 bg-green-light">
+              <div class="card-body p-4">
+                <div class="media">
+                  <div class="media-body mr-3">
+                    <h6 class="text-uppercase text-secondary mb-1">Macro Calculator</h6>
+                    <h4 class="text-white">Find the right food for the right goal</h4>
+                    <p class="small text-dark">Nutrita is here to listen and give you some simple advices based on good science.</p>
+                    <button class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Get Started</button>
+                  </div>
+                  <div class="align-self-center">
+                    <img class="mr-n3 mt-n3 mb-n3 d-flex d-md-none" src="https://nutrita-calculator.firebaseapp.com/static/media/happiness.51409435.svg" alt="" width="108">
+                    <img class="mr-n3 mt-n7 mb-n3 d-none d-md-flex" src="https://nutrita-calculator.firebaseapp.com/static/media/happiness.51409435.svg" alt="" width="228">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card mb-0 bg-soft-ocre">
+              <div class="card-body p-4">
+                <div class="media">
+                  <div class="media-body mr-3">
+                    <h6 class="text-uppercase text-warning mb-1">Nutrita Premium</h6>
+                    <h4>Free 30-day trial</h4>
+                    <p class="small text-secondary">Turn your food habits and personal data into meaningful insights</p>
+                    <button class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Get started</button>
+                  </div>
+                  <div class="align-self-center">
+                    <img class="mr-n3 mt-n3 mb-n3 d-flex d-md-none" src="assets/img/illustrations/undraw_fitness_tracker_3033.svg" alt="" width="108">
+                    <img class="mr-n3 mt-n6 mb-n3 d-none d-md-flex" src="assets/img/illustrations/undraw_fitness_tracker_3033.svg" alt="" width="208">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- IDEA: keto guides -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 text-center">
+            <h1 class="display-3 d-none d-lg-block">Industry-leading resources</h1>
+            <h1 class="d-block d-lg-none">Industry-leading resources</h1>
+            <p class="lead text-muted">Our articles are written by experts who skillfully distill complex science into simpler, actionable health principles. Our apps can help you apply these principles to make the most of them.</p>
+            <a class="btn btn-link btn-block btn-lg mb-5" href="https://nutrita.app/blog/" target="_blank">See all</a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-9 pr-0 pr-lg-3">
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0">
+
+              <li class="nav-item" style="min-width: 192px; max-width: 192px">
+                <a href="https://nutrita.app/keto-flu/" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita.app/wp-content/uploads/2018/10/keto-flu-blog-post.svg" alt="">
+                  <h2 class="h4 text-dark">What’s the Keto Flu & How to Cure it</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px; max-width: 192px">
+                <a href="#" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/12/keto-guide-beginner-blog-400x250.png" alt="">
+                  <h2 class="h4 text-dark">The Ultimate Keto Diet Guide for Beginners</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px; max-width: 192px">
+                <a href="https://nutrita.app/measure-ketone-levels/" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/10/measure-ketosis-post.jpg" alt="">
+                  <h2 class="h4 text-dark">3 ways to measure ketone levels: which is the best?  </h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px; max-width: 192px">
+                <a href="#" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/11/ketosis-blog-featured-img-400x250.png" alt="">
+                  <h2 class="h4 text-dark">The Ultimate Guide to Ketosis</h2>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- / .container -->
+    </div> <!-- / .main-content -->
+
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Nutrita Premium"
+    })
+  </head>
+  <body>
+    @@include("partials/topnav-connected.html")
+    @@include("partials/modals.html")
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content mt-5 mb-7 my-lg-6">
+      <div class="container container pt-5">
+        <div class="row justify-content-start">
+          <div class="col-12 col-lg-2 d-none d-lg-flex">
+            <nav class="nav flex-column">
+              <a class="btn btn-lg btn-success mb-3 btn-block" href="search-zero-state.html"><i class="fe fe-plus"></i> Add foods</a>
+              <a class="nav-link pl-0 py-3 text-dark" href="dashboard-full.html">
+                <i class="fe fe-home h3 mr-2"></i>Home
+              </a>
+              <a class="nav-link pl-0 py-3 text-secondary" href="journal.html">
+                <i class="fe fe-activity h3 mr-2"></i>Journal
+              </a>
+              <a class="nav-link pl-0 py-3 text-secondary" href="profile.html">
+                <i class="fe fe-user h3 mr-2"></i>Profile
+              </a>
+              <a class="nav-link pl-0 py-3 text-secondary" href="settings.html">
+                <i class="fe fe-settings h3 mr-2"></i>Settings
+              </a>
+            </nav>
+          </div>
+          <div class="col-12 col-lg-8">
+
+            <div class="card mb-0">
+              <div class="header-body px-4">
+                <div class="row align-items-end">
+                  <div class="col">
+
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle text-secondary">
+                      Free months
+                    </h6>
+
+                    <!-- Title -->
+                    <h1 class="header-title">
+                      Want more Nutrita for less?
+                    </h1>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+              <div class="card-body">
+                <p class="">Get $US 5 off your next premium subscription when you refer a friend to try Nutrita Premium. <a href="#" data-toggle="modal" data-target="#howInvitationsWork">How invitations work?</a></p>
+                <div class="form-group mb-3">
+                  <label for="discountCoupon">Share your invitation code</label>
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" value="7tzw83" aria-label="invitationCode" id="invitationCode">
+                    <div class="input-group-append">
+                      <div class="dropdown btn btn-dark border-0">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle text-white" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fe fe-share-2"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item small">
+                            <i class="fe fe-twitter mr-2"></i>Share on Twitter
+                          </a>
+                          <a href="#!" class="dropdown-item small">
+                            <i class="fe fe-facebook mr-2"></i>Share on Facebook
+                          </a>
+                          <a href="#!" class="dropdown-item small">
+                            <i class="fe fe-copy mr-2"></i>Copy link
+                          </a>
+                          <hr>
+                          <a href="#!" class="dropdown-item">
+                            Help
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-lg btn-success mx-auto btn-block d-lg-none d-block" type="button" name="button">WhatsApp</button>
+                <img class="d-block mx-auto w-75 my-4" src="assets/img/illustrations/undraw_spread_love_r9jb.svg" alt="Nutrita - invite friends">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- / .container -->
+      <div class="fixed-bottom">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-4">
+            <div class="alert alert-dark alert-dismissible fade show mx-3 pr-4 mb-6 mb-lg-4" role="alert">
+              <div class="row d-flex align-items-center">
+                <div class="col">
+                  Link copied
+                </div>
+                <div class="col-auto pr-0 justify-content-between align-items-center d-flex">
+                  <button type="button" class="close position-relative d-flex align-self-end py-0 pr-2" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div><!-- / .fixed bottom -->
+    </div> <!-- / .main-content -->
+    <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
+      <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
+      <a class="nav-link btn btn-lg btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" href="search-zero-state.html"><i class="fe fe-plus d-block text-white"></i></a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="settings.html"><i class="fe fe-settings d-block mb-2"></i>Settings</a>
+    </nav>
+
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

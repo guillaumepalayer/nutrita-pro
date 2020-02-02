@@ -1,0 +1,294 @@
+//
+// user.scss
+// Use this to write your custom SCSS
+//
+.animated-under-text {
+  color: white;
+	background: linear-gradient(45deg, #E34444 50%, #22C88A 60%);
+	background-size: 400% 400%;
+	animation: gradientBG 4s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center center;
+  animation-duration: 12s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.navbar-brand-img, .navbar-brand > img{
+  max-height: 36px;
+}
+.navbar-collapse:before{
+  border-top-width: 0
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    border-bottom-width: 3px;
+    border-color: $green;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #FFFFFF;
+  background-color: #2C7BE5;
+  background: #22c88a1a;
+}
+.bg-soft-red{
+  background-color: rgba(243,163,154,1);
+}
+.bg-soft-ocre{
+  background-color: rgba(252,232,179,1);
+}
+.bg-soft-gradient-green-grey{
+  background: linear-gradient(to right, #d3f4e8, #d0d4d9);
+}
+.chart-container{
+  position: relative;
+  margin: auto;
+  height: 128px
+}
+.bg-green-light{
+  background-color: #00d97e
+}
+.bg-mint{
+  background-color: #47E6B1
+}
+.bg-green{
+  background-color: #22C88A
+}
+.bg-orange-light{
+  background-color: #f6c343
+}
+.bg-red-light{
+  background-color: #e63757
+}
+.bg-pink-light{
+  background-color: #f8bbd0
+}
+.bg-blue-light{
+  background-color: #d5e5fa;
+}
+.bg-white-light{
+  background-color: #F9FBFD;
+}
+.bg-img-right {
+  background-position: 110% 50%;
+  background-size: 88px;
+  background-repeat: no-repeat;
+}
+.badge-xl{
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 16px;
+}
+.badge-soft-success.badge-xl{
+  background: #D2FFF2;
+  border: 1px solid #A2F5DD;
+}
+.badge-soft-secondary.badge-xl{
+  background: none;
+  border: 1px solid #E3EBF6;
+}
+.badge-soft-moderate{
+  color: #1200d9;
+  background-color: #d0ccf7;
+}
+.modal-dialog-vertical.modal-sidebar-nav{
+  max-width: 250px;
+}
+.btn-slide-right{
+    position: absolute !important;
+    right: -8px;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 1 !important;
+}
+.btn-slide-left{
+    position: absolute !important;
+    left: -8px;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 1 !important;
+}
+
+.doughnut-chart{
+  height: 256px!important;
+  min-height: 256px;
+  min-width: 256px
+}
+.main-radial-progress-chart{
+  min-height: 260px;
+  min-width: 260px
+}
+.main-radial-progress-chart svg {
+ width: 250;
+ max-width: 300px;
+}
+.main-radial-progress-chart.week {
+ text-align: center;
+}
+.main-radial-progress-chart > .date {
+ color: white;
+ font-size: 25px;
+ font-weight: 100;
+ text-align: center;
+ margin-bottom: 15px;
+}
+.main-radial-progress-chart > .circle {
+ margin: 3px auto;
+ border-radius: 50%;
+ width: 27px;
+ height: 27px;
+ line-height: 27px;
+ text-align: center;
+ color: #565656;
+ font-size: 14px;
+ font-weight: 300;
+}
+.main-radial-progress-chart > .active {
+ color: white;
+ background-color: #fa1654 !important;
+}
+.container-progress-gauge div {
+  display: inline-block;
+  width: 64px;
+}
+.rbc-center-text {
+  fill: #95AAC9;
+  font-size: 14px;
+  font-weight: bold;
+}
+#chart-tooltip{
+  z-index: 1060;
+}
+.animated-under-text {
+  color: white;
+	background: linear-gradient(244.71deg, #FFE600 -35.32%, #FAAD14 10.66%, #F7169C 54.29%, #3435F5 94.81%);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center center;
+}
+.animated-background {
+	background: linear-gradient(-45deg, #FFE600, #FAAD14, #F7169C, #3435F5);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.rounded-xl{
+  border-radius:24px
+}
+
+// custom margins
+.mt-n10{
+  margin-top: -21.5rem;
+}
+.mt-n64{
+  margin-top: -64px
+}
+.gauge-value-align-center{
+  margin-top:-5.7rem;
+  margin-bottom: 13px;
+}
+.week.nav-overflow > li:last-child{
+  padding-right: 16px
+}
+
+.content-paint{
+  contain: paint;
+}
+.bg-cover.content-paint{
+  background-image: url(../../assets/img/covers/home-bg.jpg);
+  background-position: right -140px;
+  background-size: 120% auto;
+}
+
+//CircularProgressbar
+ul.week {
+  margin: 0;
+  padding: 0;
+}
+
+ul.week li {
+  display: inline-block;
+  margin: 2px 10px;
+}
+
+.week {
+  text-align: center;
+}
+
+ul.week li svg {
+  width: 8vw;
+  max-width: 80px;
+}
+
+.date {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.circle {
+  margin: 3px auto;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+li:hover .circle {
+  color: white;
+  background-color: #565656;
+
+}
+
+.circle.active {
+  color: white;
+  background-color: $green !important;
+}
+
+.rbc-label-start {
+  font-family: fontawesome;
+  font-weight: bold;
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  .avatar-xxl {
+      width: 8rem;
+      height: 8rem;
+      font-size: 2.66667rem;
+  }
+  .mt-n10{
+    margin-top: 0;
+  }
+  .bg-cover.content-paint{
+    background-image: url(../../assets/img/covers/home-bg-mobile.jpg);
+    background-size: 140% auto;
+  }
+}

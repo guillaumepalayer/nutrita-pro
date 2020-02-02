@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Nutrita Premium"
+    })
+  </head>
+  <body>
+    @@include("partials/topnav-profile-settings.html")
+    @@include("partials/modals.html")
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content my-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="card">
+
+              <div class="card-body">
+
+
+
+                <!-- Pretitle -->
+                <h6 class="header-pretitle text-secondary">
+                  Overview
+                </h6>
+
+                <!-- Title -->
+                <h1 class="header-title mb-5">
+                  Settings
+                </h1>
+
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td colspan="2" class="p-0 border-top-0 pt-0">
+                          <h2 class="mb-2">Carbs</h2>
+                        </td>
+                      </tr>
+                      <tr class="small">
+                        <td colspan="2" class="px-0 text-secondary border-top-0 pt-2">
+                          <div class="row no-gutters">
+                            <div class="col align-self-start">
+                              <span class="text-secondary d-inline-block">Carbs limit / day</span>
+                            </div>
+                            <div class="col-auto text-right">
+                              <span class="h6 text-secondary pr-2 font-weight-normal">Net</span>
+                            </div>
+                            <div class="col-auto">
+                              <div class="custom-control custom-switch d-flex align-items-center">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1"><label class="custom-control-label py-2 mb-0 text-muted align-middle h6 font-weight-normal" for="customSwitch1">Total</label>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 text-right align-middle border-0 pt-0 pb-5 w-100">
+                          <input type="range" class="custom-range" min="0" max="100" id="customRange2">
+                          <div class="row no-gutters justify-content-between text-secondary mt-n3 pt-1">
+                            <div class="col text-left">
+                            <small>0</small>
+                            </div>
+                            <div class="col text-center">
+                            <small>100</small>
+                            </div>
+                            <div class="col text-right">
+                            <small>200</small>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="px-0 text-right align-middle border-0 pt-0 pb-5">
+                          <h5 class="pull-net-carbs m-0">30g</h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="p-0 border-top-1 pt-4">
+                          <h2 class="mb-2">Protein</h2>
+                        </td>
+                      </tr>
+                      <tr class="small">
+                        <td class="px-0 text-secondary border-top-0 pt-2">Protein target / day</td>
+                        <td class="px-0 text-right align-middle border-top-0 pt-2">
+                          <h5 class="pull-protein m-0">126g</h5>
+                          <p class="small text-muted mb-0">(1.8g/kg)</p>
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td colspan="2" class="pt-0 px-0 border-0 pb-0">
+                          <input type="range" class="custom-range" min="0" max="10" id="customRange2">
+                          <div class="row no-gutters justify-content-between text-secondary mt-n3 pt-1 mb-4">
+                            <div class="col">
+                            <small>x</small>
+                            </div>
+                            <div class="col text-center">
+                            <small>x</small>
+                            </div>
+                            <div class="col text-right">
+                            <small>x</small>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+
+                <h2 class="card-title mb-4">
+                  Profile
+                </h2>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#changeName">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Change name
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Guillaume Palayer
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#changeEmail">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Change email
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    guillaume.palayer@gmail.com
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#changeAvatar">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Change Avatar
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Upload a new picture
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#changePaymentMethod">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Manage your payment methods
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    €9.99/month • Renews on May 4, 2019
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#cancelMySubscription">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Cancel your subscription
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    You and anyone sharing this account will lose access to data from your Nutrita Pro plan.
+                  </h4>
+                </a>
+                <hr>
+                <a class="pb-6 d-block w-100" href="#" data-toggle="modal" data-target="#deleteMyAccount">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Delete account
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    You and anyone sharing this account will lose data from your Nutrita Pro.
+                  </h4>
+                </a>
+
+                <h2 class="card-title mb-4">
+                  Measurement
+                </h2>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#manageUnits">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Units
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Metrics
+                  </h4>
+                </a>
+                <hr>
+                <a class="pb-6 d-block w-100" href="#" data-toggle="modal" data-target="#manageUnits">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Energy
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Calories
+                  </h4>
+                </a>
+
+                <h2 class="card-title mb-4">
+                  Notifications
+                </h2>
+
+                <div class="row">
+                  <div class="col">
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle text-secondary">
+                      Completed goals
+                    </h6>
+                    <!-- Title -->
+                    <h4 class="header-title">
+                      Get updates when you reach your goal
+                    </h4>
+                  </div>
+                  <div class="col-auto pr-0">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle text-secondary">
+                      Goal progress tips
+                    </h6>
+                    <!-- Title -->
+                    <h4 class="header-title">
+                      Get tips to help you meet your activity goal
+                    </h4>
+                  </div>
+                  <div class="col-auto pr-0">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2"></label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle text-secondary">
+                      Allow Desktop Notifications
+                    </h6>
+                    <!-- Title -->
+                    <h4 class="header-title">
+                      Receive notification through your default web browser
+                    </h4>
+                  </div>
+                  <div class="col-auto pr-0">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3"></label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle text-secondary">
+                      Opt out of marketing emails
+                    </h6>
+                    <!-- Title -->
+                    <h4 class="header-title">
+                      Receive periodically offers and news from Nutrita
+                    </h4>
+                  </div>
+                  <div class="col-auto pr-0">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                      <label class="custom-control-label" for="customSwitch4"></label>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      </div> <!-- / .main-content -->
+    </div> <!-- / .main-content -->
+    <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
+      <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
+      <a class="nav-link btn btn-lg btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" href="search-zero-state.html"><i class="fe fe-plus d-block text-white"></i></a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="settings.html"><i class="fe fe-settings d-block mb-2"></i>Settings</a>
+    </nav>
+
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

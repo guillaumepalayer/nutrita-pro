@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Nutrita Premium"
+    })
+  </head>
+  <body>
+    @@include("partials/topnav-connected.html")
+    @@include("partials/modals.html")
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content my-5 my-lg-6">
+      <div class="container pt-5 pt-lg-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <div class="row align-items-center mb-4">
+              <div class="col">
+                <button class="btn btn-sm btn-white mr-2" type="button" name="button" data-toggle="modal" data-target="#modalFilterNutrientDensity">Nutrients</button>
+                <button class="btn btn-sm btn-white mr-2" type="button" name="button" data-toggle="modal" data-target="#modalFilterKetoScore">Keto score</button>
+                <button class="btn btn-sm btn-white" type="button" name="button" data-toggle="modal" data-target="#modalFilterInsulinIndex">Insulin index</button>
+              </div>
+            </div>
+            <!-- Title -->
+            <h1 class="header-title mb-4">
+              145 results
+            </h1>
+            <div class="card">
+              <a data-toggle="modal" href="#onboardingTuto">
+                <div class="header-body bg-primary rounded-top px-4 py-3 border-0">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <p class="mb-0 text-white">Get free 30-day trial of Nutrita <span class="d-none d-md-inline-block">Premium</span> </p>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fe fe-chevron-right h2 mb-0 text-white"></i>
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+              </a>
+              <div class="card-body p-0">
+                <ul class="list-group list-group-lg list-group-flush list">
+                  <a data-toggle="modal" href="#modalFood">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto text-center">
+                          <span class="avatar avatar-lg">
+                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                          </span>
+                          <div class="row mt-n3">
+                            <div class="col-12 text-center">
+                              <div class="avatar-group">
+                                <div class="avatar avatar-xs">
+                                  <span class="avatar-title rounded-circle bg-primary"><i class="fe fe-award"></i></span>
+                                </div>
+                                <div class="avatar avatar-xs">
+                                  <span class="avatar-title rounded-circle bg-danger"><i class="fe fe-heart"></i></span>
+                                </div>
+                                <div class="avatar avatar-xs">
+                                  <span class="avatar-title rounded-circle bg-success"><i class="fe fe-list"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-8 col-md-10 px-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge bg-soft-gradient-green-grey">Partial data</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+              <a href="#!" class="card-footer text-center font-weight-bold border-top">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div> <!-- / .container -->
+    </div> <!-- / .main-content -->
+    <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
+      <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
+      <a class="nav-link btn btn-lg btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" href="search-zero-state.html"><i class="fe fe-plus d-block text-white"></i></a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="settings.html"><i class="fe fe-settings d-block mb-2"></i>Settings</a>
+    </nav>
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

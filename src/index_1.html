@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Nutrita Premium"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    <!-- NAVIGATION
+    ================================================== -->
+    @@include("partials/topnav.html")
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content my-6">
+      <div class="container pt-5 pt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8 pr-0 pr-lg-3">
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 pb-5">
+              <li class="nav-item mr-4">
+                <a href="https://nutrita.app/pro/keto-score">
+                  <div class="card mb-0 bg-green-light" style="width:260px">
+                    <div class="card-body p-4">
+                      <div class="media">
+                        <div class="media-body mr-3">
+                          <h6 class="text-uppercase text-dark mb-1">Reach your goal</h6>
+                          <h4 class="text-dark">Discover our Keto score</h4>
+                          <div class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2">Explore</div>
+                        </div>
+                        <div class="align-self-end">
+                          <img class="mb-n4 mr-n5" src="assets\img\illustrations\keto-score-mobile-ui.png" alt="keto-score-mobile-ui" width="92">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="https://nutrita.app/pro/nutrient-density">
+                  <div class="card mb-0 bg-blue-light" style="width:260px">
+                    <div class="card-body p-4">
+                      <div class="media">
+                        <div class="media-body mr-3">
+                          <h6 class="text-uppercase text-dark mb-1">Explore food details</h6>
+                          <h4 class="text-dark">With our Nutrient density</h4>
+                          <div class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2">Learn more</div>
+                        </div>
+                        <div class="align-self-end">
+                          <img class="mb-n4 mr-n5" src="assets\img\illustrations\nutrient-density-mobile-ui.png" alt="keto-score-mobile-ui" width="92">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://nutrita.app/pro/insulin-index">
+                  <div class="card mb-0 bg-pink-light" style="width:260px">
+                    <div class="card-body p-4">
+                      <div class="media">
+                        <div class="media-body mr-3">
+                          <h6 class="text-uppercase text-dark mb-1">Probe your insulin</h6>
+                          <h4 class="text-dark">With our Insulin index</h4>
+                          <div class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2">Discover</div>
+                        </div>
+                        <div class="align-self-end">
+                          <img class="mb-n4 mr-n5" src="assets\img\illustrations\insulin-index-mobile-ui.png" alt="keto-score-mobile-ui" width="92">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://nutrita.app/pro/about">
+                  <div class="card mb-0 bg-orange-light" style="width:260px">
+                    <div class="card-body p-4">
+                      <div class="media">
+                        <div class="media-body mr-3">
+                          <h6 class="text-uppercase text-dark mb-1">New nutrition stack</h6>
+                          <h4 class="text-dark">How Nutrita is different</h4>
+                          <div class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2">Learn more</div>
+                        </div>
+                        <div class="align-self-end">
+                          <img class="mb-n4 mr-n5" src="assets\img\illustrations\nutrita-mobile-app-ui.svg" alt="keto-score-mobile-ui" width="92">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button class="btn btn-rounded-circle btn-white btn-slide-right d-none d-lg-block" type="button" name="button">
+              <i class="fe fe-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 mb-lg-6 pt-3 pt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <!-- Title -->
+            <h1 class="header-title mb-4">
+              Foods to eat while you're in a Keto diet
+            </h1>
+            <div class="card mb-0">
+              <div class="card-body p-0">
+                <ul class="list-group list-group-lg list-group-flush list">
+                  <a data-toggle="modal" href="#modalFood">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto pl-3">
+                          <span class="avatar avatar-lg">
+                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/liver.jpg" alt="..." class="avatar-img rounded">
+                          </span>
+                        </div>
+                        <div class="col-8 col-md-10 pl-1 pr-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                  <a data-toggle="modal" href="#getNutritaUnlimited">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto pl-3">
+                          <span class="avatar avatar-lg">
+                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/salmon.jpg" alt="..." class="avatar-img rounded">
+                          </span>
+                        </div>
+                        <div class="col-8 col-md-10 pl-1 pr-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                  <a data-toggle="modal" href="#modalFood">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto pl-3">
+                          <span class="avatar avatar-lg">
+                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/avocado.jpg" alt="..." class="avatar-img rounded">
+                          </span>
+                        </div>
+                        <div class="col-8 col-md-10 pl-1 pr-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+              <a href="collection-foods.html" class="card-footer text-center font-weight-bold border-top">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5 mb-lg-6 pt-0 pt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <div class="card mb-0 bg-green-light">
+              <div class="card-body p-4">
+                <div class="media">
+                  <div class="media-body mr-3">
+                    <h6 class="text-uppercase text-secondary mb-1">Macro Calculator</h6>
+                    <h4 class="text-white">Find the right food for the right goal</h4>
+                    <p class="small text-dark">Nutrita is here to listen and give you some simple advices based on good science.</p>
+                    <a class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2" href="macro-calculator.html">Get Started</a>
+                  </div>
+                  <div class="align-self-center">
+                    <img class="mr-n3 mt-n3 mb-n3 d-flex d-md-none" src="https://nutrita-calculator.firebaseapp.com/static/media/happiness.51409435.svg" alt="" width="108">
+                    <img class="mr-n3 mt-n7 mb-n3 d-none d-md-flex" src="https://nutrita-calculator.firebaseapp.com/static/media/happiness.51409435.svg" alt="" width="228">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDEA: keto guides -->
+      <div class="container mb-5 mb-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8 pr-0 pr-lg-3">
+            <!-- Title -->
+            <h1 class="header-title mb-4">
+              Learn all things keto
+            </h1>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0">
+
+              <li class="nav-item" style="min-width: 192px">
+                <a href="https://nutrita.app/keto-flu/" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita.app/wp-content/uploads/2018/10/keto-flu-blog-post.svg" alt="">
+                  <h2 class="h4 text-dark">What’s the Keto Flu & How to Cure it</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/12/keto-guide-beginner-blog-400x250.png" alt="">
+                  <h2 class="h4 text-dark">The Ultimate Keto Diet Guide for Beginners</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="https://nutrita.app/measure-ketone-levels/" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/10/measure-ketosis-post.jpg" alt="">
+                  <h2 class="h4 text-dark">3 ways to measure ketone levels: which is the best?  </h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/11/ketosis-blog-featured-img-400x250.png" alt="">
+                  <h2 class="h4 text-dark">The Ultimate Guide to Ketosis</h2>
+                </a>
+              </li>
+            </ul>
+            <button class="btn btn-rounded-circle btn-white btn-slide-right d-none d-lg-block" type="button" name="button">
+              <i class="fe fe-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDEA: keto recipes -->
+      <div class="container mb-5 mb-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8 pr-0 pr-lg-3">
+            <!-- Title -->
+            <h1 class="header-title mb-4">
+              It’s keto & it’s delicious
+            </h1>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0">
+
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" data-toggle="modal" data-target="#modalRecipe">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                  <h2 class="h4 text-dark">Title recipe</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" data-toggle="modal" data-target="#modalRecipe">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                  <h2 class="h4 text-dark">Title recipe</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" data-toggle="modal" data-target="#modalRecipe">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                  <h2 class="h4 text-dark">Title recipe</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" data-toggle="modal" data-target="#modalRecipe">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                  <h2 class="h4 text-dark">Title recipe</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" data-toggle="modal" data-target="#modalRecipe">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                  <h2 class="h4 text-dark">Title recipe</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" data-toggle="modal" data-target="#onboardingTuto">
+                  <div class="rounded img-thumbnail mb-3 bg-white shadow-sm d-flex justify-content-center align-items-center">
+                    <div class="row bg-cover w-100" style="min-height: 118px; max-height: 118px; -webkit-filter: grayscale(100%); filter: grayscale(100%); background-image: url(https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg);">
+                      <div class="col d-flex align-items-center justify-content-center">
+                        <button class="btn btn-rounded-circle btn-white"type="button" name="button"><i class="fe fe-lock text-secondary"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <h2 class="h4 text-dark">Go Premium to see more</h2>
+                </a>
+              </li>
+            </ul>
+            <button class="btn btn-rounded-circle btn-white btn-slide-right d-none d-lg-block" type="button" name="button">
+              <i class="fe fe-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDEA: Device connection -->
+      <div class="container mb-5 mb-lg-6 pt-0 pt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <div class="card mb-0 bg-blue-light">
+              <div class="card-body p-4">
+                <div class="media">
+                  <div class="media-body mr-3">
+                    <h6 class="text-uppercase text-secondary mb-1">Nutrita Premium</h6>
+                    <h4 class="mb-4">Connect your Keto & Glucose meter</h4>
+                    <button class="btn btn-outline-primary btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Get free 30-day trial</button>
+                  </div>
+                  <div class="align-self-center">
+                    <img class="mr-n3 mt-n3 mb-n3 d-flex d-md-none" src="assets/img/illustrations/undraw_sync4_xlc6.svg" alt="" width="108">
+                    <img class="mr-n3 mt-n6 mb-n3 d-none d-md-flex" src="assets/img/illustrations/undraw_sync4_xlc6.svg" alt="" width="188">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDEA: Affiliate Device -->
+      <div class="container mb-5 mb-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="card mb-0">
+              <div class="card-body p-4">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+
+                    <div class="avatar avatar-lg">
+                      <img src="https://cdn.shopify.com/s/files/1/2010/7777/products/Ketone-Readings_a9022f3a-a46e-4e64-b6ec-1f9264d62e35_2000x.jpg?v=1551398205" alt="..." class="img-fluid" width="88">
+                    </div>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <h4 class="card-title mb-1 text-dark">
+                      Keto-Mojo Ketone & Glucose Meter<span class="badge badge-soft-secondary ml-2">Ad</span>
+                    </h4>
+
+                    <p class="card-text small text-muted mb-1">
+                      The Keto-Mojo meter and testing strips utilize the most advanced technology in in-vitro glucose and ketone testing.
+                    </p>
+
+                    <p class="card-text small text-secondary">
+                      <span class="text-success">●</span> $49.99 (Available)
+                    </p>
+
+                  </div>
+                  <div class="col-12 col-md-auto d-flex justify-content-center">
+                    <a class="btn btn-sm btn-white btn-block mt-4 mt-md-0 d-md-inline-block text-center" href="https://keto-mojo.com/collections/all/products/td-4279-ketone-and-glucose-meter" target="_blank">
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5 mb-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8 pr-0 pr-lg-3">
+            <!-- Title -->
+            <h1 class="header-title mb-4">
+              Explore Nutrita
+            </h1>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0">
+              <li class="nav-item">
+                <a href="collection-foods.html">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Top sources of Zinc</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="collection-foods.html">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/leucine.91ab660c.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Top source of Leucine</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="collection-foods.html">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Top source of Vitamin K2</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="collection-foods.html">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Collection title</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Collection title</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="collection-foods.html">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Collection title</h2>
+                </a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="collection-foods.html">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Collection title</h2>
+                </a>
+              </li>
+            </ul>
+            <button class="btn btn-rounded-circle btn-white btn-slide-right d-none d-lg-block"  type="button" name="button">
+              <i class="fe fe-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5 mb-lg-6 pt-0 pt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <div class="card mb-0 bg-soft-ocre">
+              <div class="card-body p-4">
+                <div class="media">
+                  <div class="media-body mr-3">
+                    <h6 class="text-uppercase text-warning mb-1">Nutrita Premium</h6>
+                    <h4>Free 30-day trial</h4>
+                    <p class="small text-secondary">Turn your food habits and personal data into meaningful insights</p>
+                    <button class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Get started</button>
+                  </div>
+                  <div class="align-self-center">
+                    <img class="mr-n3 mt-n3 mb-n3 d-flex d-md-none" src="assets/img/illustrations/undraw_fitness_tracker_3033.svg" alt="" width="108">
+                    <img class="mr-n3 mt-n6 mb-n3 d-none d-md-flex" src="assets/img/illustrations/undraw_fitness_tracker_3033.svg" alt="" width="208">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5 mb-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <!-- Title -->
+            <h1 class="header-title mb-4">
+              Foods to eat to control your blood sugars
+            </h1>
+            <div class="card mb-0">
+              <div class="card-body p-0">
+                <ul class="list-group list-group-lg list-group-flush list">
+                  <a data-toggle="modal" href="#modalFood">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto pl-3">
+                          <span class="avatar avatar-lg">
+                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                          </span>
+                        </div>
+                        <div class="col-8 col-md-10 pl-1 pr-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                  <a data-toggle="modal" href="#modalFood">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto pl-3">
+                          <span class="avatar avatar-lg">
+                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                          </span>
+                        </div>
+                        <div class="col-8 col-md-10 pl-1 pr-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                  <a data-toggle="modal" href="#modalFood">
+                    <li class="list-group-item px-0 py-4 border-0 pl-3">
+                      <div class="row align-items-start">
+                        <div class="col-auto pl-3">
+                          <span class="avatar avatar-lg">
+                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                          </span>
+                        </div>
+                        <div class="col-8 col-md-10 pl-1 pr-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Keto score
+                                    <span class="badge badge-soft-success">Good</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Nutrient Density
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
+                                <div class="d-flex justify-content-left no-gutters align-content-center">
+                                  <p class="card-text small text-secondary mb-0">
+                                    Insulin Index
+                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="card-text small text-secondary mb-0"></span>
+                                    </span>
+                                  </p>
+                                </div>
+                                <div class="row align-items-center no-gutters">
+                                  <div class="col-auto">
+                                    <div class="card-text small text-secondary mr-2">7/10</div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="progress progress-sm">
+                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+              <a href="collection-foods.html" class="card-footer text-center font-weight-bold border-top">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDEA: diabet guides -->
+      <div class="container mb-5 mb-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8 pr-0 pr-lg-3">
+            <!-- Title -->
+            <h1 class="header-title mb-4">
+              Learn all things blood sugar
+            </h1>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0">
+
+              <li class="nav-item" style="max-width: 192px; min-width: 192px">
+                <a href="" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/01/insulin-resistance-guide-blog-400x250.png" alt="">
+                  <h2 class="h4 text-dark">The ultimate Guide to Insulin, Insulin resistance and more…</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="max-width: 192px; min-width: 192px">
+                <a href="#" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/12/keto-diabet-blog-post.png" alt="">
+                  <h2 class="h4 text-dark">Can a keto diet reverse type 2 diabetes?</h2>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5 mb-lg-6 pt-0 pt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <div class="card mb-0 bg-soft-red">
+              <div class="card-body p-4">
+                <div class="media">
+                  <div class="media-body mr-3">
+                    <h4>Get 30 days of personal tracking</h4>
+                    <button class="btn btn-outline-light btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Try now</button>
+                  </div>
+                  <div class="align-self-center">
+                    <img class="mr-n3 mt-n3 mb-n3 d-flex d-md-none" src="assets/img/illustrations/undraw_calendar_dutt.svg" alt="" width="108">
+                    <img class="mr-n3 mt-n6 mb-n3 d-none d-md-flex" src="assets/img/illustrations/undraw_calendar_dutt.svg" alt="" width="168">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDEA: Ask the expert -->
+      <div class="container mb-5 mb-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <div class="card mb-0">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12 col-lg-auto">
+
+                    <a href="" class="avatar avatar-lg mb-3 d-block mx-auto">
+                      <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Raphael_Sirtolie.png" alt="..." class="avatar-img rounded-circle">
+                    </a>
+
+                  </div>
+                  <div class="col-12 col-lg">
+
+                    <h4 class="card-title mb-1 text-center text-lg-left">
+                      <a href="profile-posts.html">Ask the expert</a>
+                    </h4>
+
+                    <p class="card-text text-center text-lg-left small text-muted mb-3 mb-lg-1">
+                      Raphael Sirtoli - Co-founder Nutrita
+                    </p>
+                    <p class="card-text text-center text-lg-left small text-secondary mb-4 mb-lg-1">
+                      Ask one of the world’s top experts on Keto and intermittent fasting about anything. Book your 1 to 1 interview now. 100 free spots available.
+                    </p>
+
+                  </div>
+                  <div class="col-12 col-lg-auto text-center text-lg-left">
+                    <h5 class="text-center">Book now</h5>
+                    <a href="#!" class="btn btn-sm btn-primary">
+                      Go Premium
+                    </a>
+
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+
+                        <div class="small mr-2">29/100</div>
+                        <div class="small text-muted mr-2">booked</div>
+
+                      </div>
+                      <div class="col">
+
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+
+                    <div class="avatar-group">
+                      <a href="profile-posts.html" class="avatar avatar-xs">
+                        <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+                      <a href="profile-posts.html" class="avatar avatar-xs">
+                        <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+                      <a href="profile-posts.html" class="avatar avatar-xs">
+                        <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+                      <a href="profile-posts.html" class="avatar avatar-xs">
+                        <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixed-bottom">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="alert alert-light alert-dismissible fade show mx-3 pr-4 mb-6 mb-lg-4" role="alert">
+              <div class="row d-flex align-items-center">
+                <div class="col">
+                  By using this website, you agree to our <a href="#">cookie policy</a>
+                </div>
+                <div class="col-auto pr-0 justify-content-between align-items-center d-flex">
+                  <button type="button" class="close position-relative d-flex align-self-end py-0 pr-2" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div><!-- / .fixed bottom -->
+
+    </div> <!-- / .main-content -->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

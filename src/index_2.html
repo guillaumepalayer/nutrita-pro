@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      @@include("partials/head.html", {
+        "title": "Nutrita Premium"
+      })
+    </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+      @@include("partials/sidebar.html", {
+        "category": "dashboards",
+        "subcategory": "",
+        "page": "index.html"
+      })
+    }
+    @@if (navPosition == 'topnav' || demoMode) {
+      @@include("partials/topnav-2.html", {
+        "category": "dashboards",
+        "subcategory": "",
+        "page": "index.html"
+      })
+    }
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content">
+      <!-- CARDS -->
+      <div class="container mb-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6 col-xl-8">
+
+            <!-- Card -->
+
+            <div class="card">
+              <div class="card-body">
+                <div class="row mb-4">
+                  <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Weight-loss (Week 1)
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="1-month-roi h2 mb-0">
+                          <span class="fe fe-chevron-down text-danger mb-0"></span>2-3
+                        </span>
+                        <span class="h4 mb-0 mr-1">
+                          kg
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Hba1c (Month 1)
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="1-month-roi h2 mb-0">
+                          <span class="fe fe-chevron-down text-danger mb-0"></span>1
+                        </span>
+                        <span class="h4 mb-0 mr-1">
+                          %
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Fasting blood sugar (Week 1)
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="1-month-roi h2 mb-0">
+                          <span class="fe fe-chevron-down text-danger mb-0"></span>10-20
+                        </span>
+                        <span class="h4 mb-0 mr-1">
+                          mg/dL
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Triglycerides (Week 1)
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="1-month-roi h2 mb-0">
+                          <span class="fe fe-chevron-down text-danger mb-0"></span>10-20
+                        </span>
+                        <span class="h4 mb-0 mr-1">
+                          mg/dL
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- / .row -->
+                <div class="row">
+                  <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Waist circumference (Week 1)
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="1-month-roi h2 mb-0">
+                          <span class="fe fe-chevron-down text-danger mb-0"></span>2
+                        </span>
+                        <span class="h4 mb-0 mr-1">
+                          cm
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Metabolic benefit
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="1-month-roi h2 mb-0">
+                          <span class="fe fe-chevron-up text-success mb-0"></span>Fat burning
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Immunological benefit
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="1-month-roi h2 mb-0">
+                          <span class="fe fe-chevron-down text-danger mb-0"></span>Inflammation
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Behavioral benefit
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="1-month-roi h2 mb-0">
+                          <span class="fe fe-chevron-down text-danger mb-0"></span>Cravings
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5 mb-lg-6">
+          <div class="col col-lg-8 col-xl-8">
+
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              Browse custom recipes supporting your goals
+            </h2>
+
+            <!-- Text -->
+            <p class="display-4 text-center text-muted d-none d-lg-block">
+              Prefer to make your own? Explore +20,000 foods in our curated database
+            </p>
+
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              Browse custom recipes supporting your goals
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted d-block d-lg-none">
+              Prefer to make your own? Explore +20,000 foods in our curated database
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <!-- Text -->
+            <p class="lead text-secondary text-center">
+              Look up a food or recipe and quickly see how many net or total carbs it has. It’s easy to stay within the personal carb limit Nutrita Pro helps you set.
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="card-body pr-1">
+                <a class="d-block mb-4" data-toggle="modal" href="#modalRecipe">
+                  <div class="row align-items-start">
+                    <div class="col-auto pl-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://www.ditchthecarbs.com/wp-content/uploads/2019/04/rsz_salmon_and_cream_cheese_bites_-_small.jpg" alt="..." class="avatar-img rounded" style="object-fit: cover; height: 100%;">
+                      </span>
+                    </div>
+                    <div class="col-8 pr-0">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Salmon and Cream Cheese Bites</h4>
+                      <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">eggs - medium, milk, shredded/grated cheese, fresh or smoked salmon slices, dried dill, cream cheese</h6>
+                      <h6 class="text-uppercase text-muted my-2 text-truncate pr-2">0.5 g total carbs (0.5 NET)</h6>
+                      <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                        <li class="nav-item mr-auto">
+                          <div style="min-width: 164px;">
+                            <div class="d-flex justify-content-left no-gutters align-content-center">
+                              <p class="card-text small text-secondary mb-0">Keto score <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">9/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item mr-auto">
+                          <div style="min-width: 164px;">
+                            <div class="d-flex justify-content-left no-gutters align-content-center">
+                              <p class="card-text small text-secondary mb-0">Nutrient density <span class="badge badge-soft-warning">Ok</span><span class="card-text small text-secondary mb-0"> </span></p>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">6/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item mr-auto">
+                          <div style="min-width: 164px;">
+                            <div class="d-flex justify-content-left no-gutters align-content-center">
+                              <p class="card-text small text-secondary mb-0">Insulin index <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">19%</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 19%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <a class="d-block mb-4" data-toggle="modal" href="#modalRecipe">
+                  <div class="row align-items-start">
+                    <div class="col-auto pl-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://www.ditchthecarbs.com/wp-content/uploads/2019/04/rsz_salmon_and_cream_cheese_bites_-_small.jpg" alt="..." class="avatar-img rounded" style="object-fit: cover; height: 100%;">
+                      </span>
+                    </div>
+                    <div class="col-8 pr-0">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Salmon and Cream Cheese Bites</h4>
+                      <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">eggs - medium, milk, shredded/grated cheese, fresh or smoked salmon slices, dried dill, cream cheese</h6>
+                      <h6 class="text-uppercase text-muted my-2 text-truncate pr-2">0.5 g total carbs (0.5 NET)</h6>
+                      <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                        <li class="nav-item mr-auto">
+                          <div style="min-width: 164px;">
+                            <div class="d-flex justify-content-left no-gutters align-content-center">
+                              <p class="card-text small text-secondary mb-0">Keto score <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">9/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item mr-auto">
+                          <div style="min-width: 164px;">
+                            <div class="d-flex justify-content-left no-gutters align-content-center">
+                              <p class="card-text small text-secondary mb-0">Nutrient density <span class="badge badge-soft-warning">Ok</span><span class="card-text small text-secondary mb-0"> </span></p>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">6/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item mr-auto">
+                          <div style="min-width: 164px;">
+                            <div class="d-flex justify-content-left no-gutters align-content-center">
+                              <p class="card-text small text-secondary mb-0">Insulin index <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">19%</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 19%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <a class="d-block" data-toggle="modal" href="#modalRecipe">
+                  <div class="row align-items-start">
+                    <div class="col-auto pl-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://www.ditchthecarbs.com/wp-content/uploads/2019/04/rsz_salmon_and_cream_cheese_bites_-_small.jpg" alt="..." class="avatar-img rounded" style="object-fit: cover; height: 100%;">
+                      </span>
+                    </div>
+                    <div class="col-8 pr-0">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Salmon and Cream Cheese Bites</h4>
+                      <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">eggs - medium, milk, shredded/grated cheese, fresh or smoked salmon slices, dried dill, cream cheese</h6>
+                      <h6 class="text-uppercase text-muted my-2 text-truncate pr-2">0.5 g total carbs (0.5 NET)</h6>
+                      <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                        <li class="nav-item mr-auto">
+                          <div style="min-width: 164px;">
+                            <div class="d-flex justify-content-left no-gutters align-content-center">
+                              <p class="card-text small text-secondary mb-0">Keto score <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">9/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item mr-auto">
+                          <div style="min-width: 164px;">
+                            <div class="d-flex justify-content-left no-gutters align-content-center">
+                              <p class="card-text small text-secondary mb-0">Nutrient density <span class="badge badge-soft-warning">Ok</span><span class="card-text small text-secondary mb-0"> </span></p>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">6/10</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item mr-auto">
+                          <div style="min-width: 164px;">
+                            <div class="d-flex justify-content-left no-gutters align-content-center">
+                              <p class="card-text small text-secondary mb-0">Insulin index <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p>
+                            </div>
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto">
+                                <div class="card-text small text-secondary mr-2">19%</div>
+                              </div>
+                              <div class="col">
+                                <div class="progress progress-sm">
+                                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 19%;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <!-- Text -->
+            <p class="lead text-secondary text-center">
+              Eating enough high quality protein is crucial regardless of your health or performance goals, so Nutrita Pro helps you set your personal protein target and identify the best sources.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5 mb-lg-6">
+          <div class="col col-lg-8 col-xl-8">
+
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              See it to believe it! Track your diet & biomarkers
+            </h2>
+
+            <!-- Text -->
+            <p class="display-4 text-center text-muted d-none d-lg-block">
+              Ride the wave of progress all the way to your better body.
+            </p>
+
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              See it to believe it! Track your diet & biomarkers
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted d-block d-lg-none">
+              Ride the wave of progress all the way to your better body.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center align-items-center mb-0 mb-lg-6">
+          <div class="col-12 col-lg-5 mb-5 mb-lg-0">
+            <h3 class="h1">Food journal & progress charts</h3>
+            <!-- Text -->
+            <p class="lead text-secondary">
+              Get clarity on important questions. How often am I snacking? Do I have carb creep going on? How much high quality protein am I really getting? Am I truly eating a nutrient dense diet? And is my sleep honestly better or worse on this diet?
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 offset-lg-1 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-header-title text-center">
+                  Your daily progress
+                </h4>
+              </div>
+              <div class="card-body">
+                <div class="row no-gutters justify-content-between mb-5">
+                  <div class="col-auto mb-lg-3 mb-xl-0">
+                    <div class="media">
+                      <span class="chart-legend-item align-self-center"><i class="chart-legend-indicator bg-green-light"></i></span>
+                      <div class="media-body">
+                        <h5 class="m-0">% <span class="small text-muted">of</span></h5>
+                        <p class="small text-muted mb-0">Fat cal.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto mb-lg-3 mb-xl-0">
+                    <div class="media">
+                      <span class="chart-legend-item align-self-center"><i class="chart-legend-indicator bg-orange-light"></i></span>
+                      <div class="media-body">
+                        <h5 class="m-0">% <span class="small text-muted">of</span></h5>
+                        <p class="small text-muted mb-0"> Protein target</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="media">
+                      <!-- IDEA: if limit is crossed, switch class name bg-red-light to bg-danger for dot and circle chart -->
+                      <span class="chart-legend-item align-self-center"><i class="chart-legend-indicator bg-soft-red"></i></span>
+                      <div class="media-body">
+                        <h5 class="m-0 ">% <span class="small text-muted">of</span></h5>
+                        <p class="small text-muted mb-0">Carb limit</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col d-flex align-items-center justify-content-center">
+                    <div class="main-radial-progress-chart position-absolute d-block" style="top: 50%;"></div>
+                  </div>
+                </div>
+                <div class="row justify-content-center mb-4">
+                  <div class="col d-flex align-items-center justify-content-center" style="height: 260px">
+                    <div class="avatar avatar-xxl">
+                      <img src="assets\img\illustrations\undraw_female_avatar_l3ey_1.svg" alt="Profile pic" class="avatar-img rounded-circle shadow">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center align-items-center mb-0 mb-lg-6">
+          <div class="col-12 col-lg-4 mb-5 mb-lg-0 justify-content-center order-2 order-lg-1">
+            <div class="card px-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="16-8 classic" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="16-8 classic">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">16/8 IF</h4>
+                          <span class="small text-muted mb-0">Skip breakfast</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="14-10 classic" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="14-10 classic">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">14/10 IF</h4>
+                          <span class="small text-muted mb-0">Skip breakfast</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="16-8 late" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="16-8 late">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">16-8 IF</h4>
+                          <span class="small text-muted mb-0">Skip dinner</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="14-10 late" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="14-10 late">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">14/10 IF</h4>
+                          <span class="small text-muted mb-0">Skip dinner</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="OMAD" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="OMAD">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">OMAD</h4>
+                          <span class="small text-muted mb-0">One Meal A Day</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="6-1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="6-1">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">6-1</h4>
+                          <span class="small text-muted mb-0">Fast 1 day a week</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="5-2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="5-2">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">5-2</h4>
+                          <span class="small text-muted mb-0">Fast 2 days a week</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <a class="list-group-item list-group-item-action bg-success text-white" href="#" data-toggle="modal" data-target="#getNutritaUnlimited">
+                    Set up your fasting window
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 offset-lg-1 mb-4 mb-lg-0 order-1 order-lg-2">
+            <h3  class="h1">Fasting timer for boosting metabolic flexibility</h3>
+            <!-- Text -->
+            <p class="lead text-secondary ">
+              Snacking is out and intermittent fasting is in! Use our fasting timer to find the fasting window that best fits your schedule. It’ll help you lose weight, control blood sugar, boost fat burning and get a handle on you cravings. Keep in mind, how often you eat matters - it’s not all about calories.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center align-items-center mb-5 mb-lg-6">
+          <div class="col-12 col-lg-5 mb-5 mb-lg-0">
+            <h3 class="h1">Daily food recaps</h3>
+            <!-- Text -->
+            <p class="lead text-secondary">
+              Get useful stats about your diet and can visualize it over days, weeks and months: macronutrient breakdown, nutritional completeness, protein-to-energy ratio, fat-to-protein grams, calorie intake and more.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img class="w-100" src="assets/img/illustrations/nutrita-dashboard-laptop.jpg" alt="nutrita-dashboard-laptop">
+          </div>
+          <a class="btn btn-success btn-lg mt-5" href="#" data-toggle="modal" data-target="#getNutritaUnlimited">Create your dashboard</a>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-0 mb-lg-5">
+          <div class="col col-lg-8 text-center">
+
+            <!-- Title -->
+            <h2 class="display-2 d-none d-lg-block mb-5">
+              How is Nutrita different?
+            </h2>
+
+            <!-- Title -->
+            <h2 class="display-4 d-block d-lg-none mb-5">
+              How is Nutrita different?
+            </h2>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center">
+          <div class="col-auto col-lg-4">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link text-secondary active lead py-4" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+                <span class="d-flex d-lg-none">1</span>
+                <span class="d-none d-lg-flex">Goal driven</span>
+              </a>
+              <a class="nav-link text-secondary lead py-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">
+                <span class="d-flex d-lg-none">2</span>
+                <span class="d-none d-lg-flex">It’s not all about calories</span>
+              </a>
+              <a class="nav-link text-secondary lead py-4" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">
+                <span class="d-flex d-lg-none">3</span>
+                <span class="d-none d-lg-flex">Custom recipes</span>
+              </a>
+              <a class="nav-link text-secondary lead py-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">
+                <span class="d-flex d-lg-none">4</span>
+                <span class="d-none d-lg-flex">In-house food scores</span>
+              </a>
+              <a class="nav-link bg-success text-white lead py-4 d-none d-lg-flex" href="search-zero-state.html">Explore Nutrita <i class="fe fe-arrow-right ml-auto"></i></a>
+            </div>
+          </div>
+          <div class="col col-lg-7">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                <h3 class="h2 d-block d-lg-none">Goal driven</h3>
+                <p class="lead text-secondary">
+                  Get results by setting goals you can hit consistently. Whether you want to lose fat, control blood sugar, build muscle mass or simply maintain your weight in a healthy manner you can do it with our full support. <a href="#" data-toggle="modal" data-target="#getNutritaUnlimited">Sign up to our 7-day free trial</a> to book a free 30min expert consult.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                <h3 class="h2 d-block d-lg-none">It’s not all about calories</h3>
+                <p class="lead text-secondary">Counting calories isn’t a good approach to fat loss or general health. No one can do it accurately enough long-term, it’s not sustainable, and it doesn’t address root cause issues like hormonal imbalance and metabolic dysfunction. Nutrita Pro tracks your calories but they don’t have to be your focus. We provide more informative measures of diet quality, like the keto score, dietary insulin load, nutrient completeness, protein-to-energy ratio and more.</p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                <h3 class="h2 d-block d-lg-none">Custom recipes</h3>
+                <p class="lead text-secondary">Nutrita applies it’s food scores to hundreds of delicious low-carb recipes created by our friend DitchTheCarbs. You can browse over a hundred nutrient dense recipes in line with your carb limit and protein target. It’s way easier to choose the right recipe when you know its keto score, insulin load and nutrient density score. So whether your style is getting creative in the kitchen or keeping it super simple, you’ll have tasty options to choose from.</p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                <h3 class="h2 d-block d-lg-none">In-house food scores</h3>
+                <p class="lead text-secondary">
+                  Nutrition tracking apps don’t do much except record food and count calories. So Nutrita’s team of scientists and engineers were compelled to do something way, way cooler. They used clinical data, their biochemistry expertise and computer learning to create 3 scores: the <a href="insulin-index.html">insulin score</a> tells you how a food affects the hormone insulin, the <a href="keto-score.html">keto score</a> tells you what’s keto and what’s not, and the <a href="nutrient-density.html">nutrient density score</a> tells you how nourishing a particular food or recipe truly is.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-auto">
+            <a class="btn btn-success btn-lg d-flex d-lg-none" href="search-zero-state.html">Explore Nutrita</a>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center align-items-center mb-5 mb-lg-6">
+          <div class="col-12 col-lg-5 mb-5 mb-lg-0">
+            <!-- Title -->
+            <h2 class="display-2 d-none d-lg-block">
+              The best options, for you!
+            </h2>
+
+            <!-- Title -->
+            <h2 class="display-4 d-block d-lg-none">
+              The best options, for you!
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-muted mb-5">
+              We made it easy to compare foods and recipes according to what matters to you. Looking for nourishing options? Our nutrient density score ranges from 0 to 10 and uses color-coded labels telling you if it’s <span class="badge badge-soft-success">Good</span>, <span class="badge badge-soft-danger">Bad</span> or just <span class="badge badge-soft-warning">Ok</span>. Following a keto diet? Our keto score is on a <span class="text-danger">0</span> to <span class="text-success">10</span> scale to take the guesswork out of staying keto. Battling insulin resistance or high blood sugars? Our insulin score goes from <span class="text-success">0%</span> to <span class="text-danger">100%</span>, leaving little doubt as to the likely metabolic impact.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+            <div class="row no-gutters mt-4 mt-lg-7">
+              <div class="col-12 col-lg-6 ml-lg-n4">
+                <a data-toggle="modal" href="#modalFood">
+                  <div class="card mb-0">
+                    <div class="header-body px-4">
+                      <div class="row align-items-center">
+                        <div class="col text-center">
+                          <span class="card-avatar avatar avatar-xl mx-auto mt-n6">
+                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/banana,%20fresh.jpg" alt="Banana" class="avatar-img rounded">
+                          </span>
+                          <!-- Title -->
+                          <h1 class="header-title text-dark">
+                            Banana
+                          </h1>
+                          <h6 class="text-uppercase text-center text-muted my-2">
+                            PER 100G
+                          </h6>
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                    <div class="card-body p-4 pt-5">
+                      <div class="row justify-content-center">
+                        <div class="col col-lg-10 text-center">
+                          <h1 class="mb-1 h3 text-dark">0 out of 10 Keto score <span class="badge badge-soft-danger">Bad</span></h1>
+                          <p class="font-weight-bold text-dark">4% protein</p>
+                          <p class="text-secondary mb-0">Not a good choice for ketogenic diets</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-lg-6 mt-lg-n6 order-first mb-7 mb-lg-0">
+                <a data-toggle="modal" href="#modalFood">
+                  <div class="card mb-0">
+                  <div class="header-body px-4">
+                    <div class="row align-items-center">
+                      <div class="col text-center">
+                        <span class="card-avatar avatar avatar-xl mx-auto mt-n6">
+                          <img src="https://d3n85fzfv5z2vw.cloudfront.net/beef_steak.jpg" alt="Steak" class="avatar-img rounded">
+                        </span>
+
+                        <!-- Title -->
+                        <h1 class="header-title text-dark">
+                          Steak
+                        </h1>
+                        <h6 class="text-uppercase text-center text-muted my-2">
+                          PER 100G
+                        </h6>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="card-body p-4 pt-5">
+                    <div class="row justify-content-center">
+
+                      <div class="col col-lg-10 text-center">
+                        <h1 class="mb-1 h3 text-dark">8 out of 10 Keto score <span class="badge badge-soft-success">Good</span></h1>
+                        <p class="font-weight-bold text-dark">64% protein</p>
+                        <p class="text-secondary mb-0">A great staple fatty food for ketogenic diets</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5 mb-lg-6">
+          <div class="col col-lg-8 col-xl-8">
+
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              Our expertise at your disposal
+            </h2>
+
+            <!-- Text -->
+            <p class="display-4 text-center text-muted d-none d-lg-block">
+              Everyone needs a little help and our team is here to support you.
+            </p>
+
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              Our expertise at your disposal
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted d-block d-lg-none">
+              Everyone needs a little help and our team is here to support you.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row mb-0 mb-lg-6">
+          <div class="col-12 col-lg-5 text-center mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col">
+                <a href="https://www.linkedin.com/in/raphael-sirtoli-69962ba9/" class="avatar avatar-xl" data-toggle="tooltip" title="" data-original-title="Raphael Sirtoli" target="_blank"><img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Raphael_Sirtolie.png" alt="Raphael Sirtoli" class="avatar-img rounded-circle"></a>
+              </div>
+            </div>
+            <h3 class="h1">Free 30min expert consult</h3>
+            <!-- Text -->
+            <p class="lead text-secondary">
+              Everyone who signs up to Nutrita Pro can book a free 30min consult with our in-house expert and co-founder Raphael Sirtoli. He can help you cut through the complicated and contradictory claims in health and nutrition scene. Ask your questions and get maximum value from Nutrita Pro.
+            </p>
+          </div>
+          <div class="col-12 col-lg-5 offset-lg-1 text-center">
+            <div class="row mb-4">
+              <div class="col">
+                <!-- Avatar group -->
+                <div class="avatar-group">
+                  <a href="https://www.linkedin.com/in/dominic-d-agostino-156014b" class="avatar avatar-xl" data-toggle="tooltip" title="" data-original-title="Dominic D'Agostino" target="_blank">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/d0906012-46a3-4493-a7c8-d4aa125281bd.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="Dominic D'Agostino">
+                  </a>
+                  <a href="https://www.linkedin.com/in/eric-sodicoff-4ab669109/" class="avatar avatar-xl" data-toggle="tooltip" title="" data-original-title="Eric Sodicoff" target="_blank">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/Dr.Eric-Sodicoff.png" alt="Eric Sodicoff" class="avatar-img rounded-circle">
+                  </a>
+                  <a href="https://www.linkedin.com/in/jacqui-van-kemenade-7b076781/" class="avatar avatar-xl" data-toggle="tooltip" title="" data-original-title="Jacqui van Kemenade" target="_blank">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/Jacqui-van-Kemenade.png" alt="Jacqui van Kemenade" class="avatar-img rounded-circle">
+                  </a>
+                  <a href="https://nutrita.app/about" class="avatar avatar-xl" data-toggle="tooltip" title="" data-original-title="More">
+                    <span class="avatar-title bg-success rounded-circle"><i class="fe fe-plus"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h3 class="h1">Medically reviewed content</h3>
+            <!-- Text -->
+            <p class="lead text-secondary mb-4">
+              Knowledge is power and we want it to empower all our users, which is why all of our scientific content available for free. All of it is medically reviewed by the doctors on our <a href="about-nutrita.html">board of advisors</a>. Our team produces the highest quality scientific content on health and nutrition because of its wide range of expertise, covering medicine, scientific research, computer learning, science communication and design.
+            </p>
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container mb-5 mb-lg-7">
+        <div class="row justify-content-center mb-5 mb-lg-6">
+          <div class="col col-lg-8 col-xl-8 text-center">
+
+            <!-- Title -->
+            <h2 class="display-2 d-none d-lg-block">
+              Our customers love it
+            </h2>
+
+            <!-- Title -->
+            <h2 class="display-4 d-block d-lg-none">
+              Our customers love it
+            </h2>
+
+            <!-- Text -->
+            <p class="display-4 text-muted">
+              4/5<br>
+              <i class="fe fe-star text-success"></i>
+              <i class="fe fe-star text-success"></i>
+              <i class="fe fe-star text-success"></i>
+              <i class="fe fe-star text-success"></i>
+              <i class="fe fe-star text-muted"></i>
+            </p>
+            <p class="text-muted">on <a href="https://www.trustpilot.com/review/nutrita.app" target="_blank">Trustpilot</a></p>
+
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center mt-6 mt-md-7">
+          <div class="col-12">
+            <div class="card-deck">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0">
+
+                <div class="card-body text-center">
+
+                  <div class="avatar avatar-xl card-avatar card-avatar-top">
+                    <img class="border border-1 avatar-title rounded-circle" src="https://user-images.trustpilot.com/5de6dda41ef7dc661fd82ba7/73x73.png">
+                  </div>
+
+                  <h2 class="card-title">
+                    <a href="https://trstp.lt/dHbjhQrCM" target="_blank">Marcela</a>
+                  </h2>
+
+                  <p class="card-text text-muted">
+                    Nutrita is great, it's easy to follow and very helpful to track my nutrition. I've recently subscribed to Pro and I couldn't be happier with my experience!
+I definitely recommend and I'm looking forward to the new updates!
+                  </p>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0">
+
+                <div class="card-body text-center">
+
+                  <div class="avatar avatar-xl card-avatar card-avatar-top">
+                    <img class="border border-1 avatar-title rounded-circle" src="https://user-images.trustpilot.com/5c19216225a092cb8140946a/73x73.png">
+                  </div>
+
+                  <h2 class="card-title">
+                    <a href="https://trstp.lt/qTbfyXSup" target="_blank">Rodolfo Errani</a>
+                  </h2>
+
+                  <p class="card-text text-muted">
+                    One of the best app related to food i have ever used. Highly recommend it to anyone wanting to get in shape, more healthy! Feel energized, leaned and more handsome than ever ;)
+                  </p>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0">
+
+                <div class="card-body text-center">
+
+                  <div class="avatar avatar-xl card-avatar card-avatar-top">
+                    <img class="border border-1 avatar-title rounded-circle" src="https://user-images.trustpilot.com/5de6b414741d5f3de63300d9/73x73.png">
+                  </div>
+
+                  <h2 class="card-title">
+                    <a href="https://trstp.lt/B_wI9p3p0" target="_blank">Florine Grospellier</a>
+                  </h2>
+
+                  <p class="card-text text-muted">
+                    I wanted to lose fat on keto diet but was worried about nutrient deficiencies,. so when i saw there was a nutrient density score to help me choose the right foods i was so happy!! thanks Nutrita.
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5">
+          <div class="col col-lg-8 col-xl-8">
+
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              Get Started in Minutes
+            </h2>
+
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              Get Started in Minutes
+            </h2>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <span class="display-1 text-light">1</span>
+              </div>
+              <div class="col">
+                <h3 class="h2 mb-2">Create an account</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <span class="display-1 text-light">2</span>
+              </div>
+              <div class="col">
+                <h3 class="h2 mb-2">Track your diet & biomarkers</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <span class="display-1 text-light">3</span>
+              </div>
+              <div class="col">
+                <h3 class="h2 mb-2">Ride the wave of progress</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <a class="btn btn-success btn-lg" href="#" data-toggle="modal" data-target="#getNutritaUnlimited">Get started</a>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+      <div class="fixed-bottom">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="alert alert-light alert-dismissible fade show mx-3 pr-4 mb-4" role="alert">
+              <div class="row d-flex align-items-center">
+                <div class="col">
+                  By using this website, you agree to our <a href="" target="_blank">privacy policy</a>
+                </div>
+                <div class="col-auto pr-0 justify-content-between align-items-center d-flex">
+                  <button type="button" class="close position-relative d-flex align-self-end py-0 pr-2" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- / .main-content -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

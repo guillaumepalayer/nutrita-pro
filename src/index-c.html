@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      @@include("partials/head.html", {
+        "title": "Nutrita Premium"
+      })
+    </head>
+  <body>
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+      @@include("partials/sidebar.html", {
+        "category": "dashboards",
+        "subcategory": "",
+        "page": "index.html"
+      })
+    }
+    @@if (navPosition == 'topnav' || demoMode) {
+      @@include("partials/topnav-b.html", {
+        "category": "dashboards",
+        "subcategory": "",
+        "page": "index.html"
+      })
+    }
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content bg-cover content-paint">
+      <div class="container mt-7">
+          <div class="row justify-content-center mb-5">
+            <div class="col-12 col-lg-7 text-center text-lg-left pt-lg-6">
+              <a class="navbar-brand mr-auto d-flex d-lg-none align-items-center" href="index.html">
+                <img src="assets/img/logo.svg" alt="..." class="image-fluide mx-auto mb-3">
+              </a>
+              <!-- Title -->
+              <h1 class="text-white display-1 d-none d-lg-block mb-5">
+                Track your nutrition & get life-long results
+              </h1>
+              <h1 class="text-white display-4 d-block d-lg-none mb-5">
+                Track your nutrition & get life-long results
+              </h1>
+              <p class="h1 text-white d-none d-lg-block">Browse custom recipes supporting your goals and explore+20,000 foods in our curated database.</p>
+              <p class="lead text-white d-block d-lg-none">Browse custom recipes supporting your goals and explore +20,000 foods in our curated database.</p>
+
+              <!-- Subtitle -->
+              <h6 class="header-pretitle text-muted mb-5 mb-lg-4">✔️Free 7-day trial  ✔️No payment required</h6>
+              <div class="col-12 col-lg-8 mb-4 mb-lg-0 pl-3 pl-lg-0" style="
+    z-index: 100;
+"><div class="card"><div class="card-body pr-1"><div class="d-block mb-4 click" data-toggle="modal"><div class="row align-items-start"><div class="col-auto pl-3"><span class="avatar avatar-lg"><img src="https://d2jp17o0xc32jv.cloudfront.net/img/zucchini_and_bacon_slice.jpg" alt="..." class="avatar-img rounded" style="object-fit: cover; height: 100%;"></span></div><div class="col-8 pr-0"><h4 class="card-title mb-1 name text-dark text-truncate pr-3">Low Carb Zucchini And Bacon Slice</h4><h6 class="text-uppercase text-muted text-truncate my-2 pr-2">EGGS - MEDIUM, MILK, CREAM CHEESE, STREAKY SMOKED BACON , SPRING ONION SLICE</h6><h6 class="text-uppercase text-muted my-2 text-truncate pr-2">8.5 g total carbs (5.8 NET)</h6><ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0"><li class="nav-item mr-auto"><div style="min-width: 164px;"><div class="d-flex justify-content-left no-gutters align-content-center"><p class="card-text small text-secondary mb-0">Keto score <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p></div><div class="row align-items-center no-gutters"><div class="col-auto"><div class="card-text small text-secondary mr-2">8/10</div></div><div class="col"><div class="progress progress-sm"><div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div></div></div></div></div></li><li class="nav-item mr-auto"><div style="min-width: 164px;"><div class="d-flex justify-content-left no-gutters align-content-center"><p class="card-text small text-secondary mb-0">Nutrient density <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p></div><div class="row align-items-center no-gutters"><div class="col-auto"><div class="card-text small text-secondary mr-2">7/10</div></div><div class="col"><div class="progress progress-sm"><div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div></div></div></div></div></li><li class="nav-item mr-auto"><div style="min-width: 164px;"><div class="d-flex justify-content-left no-gutters align-content-center"><p class="card-text small text-secondary mb-0">Insulin index <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p></div><div class="row align-items-center no-gutters"><div class="col-auto"><div class="card-text small text-secondary mr-2">23%</div></div><div class="col"><div class="progress progress-sm"><div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 23%;"></div></div></div></div></div></li></ul></div></div></div><div class="d-block mb-4 click" data-toggle="modal"><div class="row align-items-start"><div class="col-auto pl-3"><span class="avatar avatar-lg"><img src="https://d2jp17o0xc32jv.cloudfront.net/img/keto_meatballs_mushroom.jpg" alt="..." class="avatar-img rounded" style="object-fit: cover; height: 100%;"></span></div><div class="col-8 pr-0"><h4 class="card-title mb-1 name text-dark text-truncate pr-3">Keto Meatballs With Mushroom Sauce</h4><h6 class="text-uppercase text-muted text-truncate my-2 pr-2">GROUND/MINCED PORK, GROUND/MINCED BEEF, ONION, GARLIC, EGGS, BEEF STOCK, CREAM CHEESE</h6><h6 class="text-uppercase text-muted my-2 text-truncate pr-2">3.6 g total carbs (3.1 NET)</h6><ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0"><li class="nav-item mr-auto"><div style="min-width: 164px;"><div class="d-flex justify-content-left no-gutters align-content-center"><p class="card-text small text-secondary mb-0">Keto score <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p></div><div class="row align-items-center no-gutters"><div class="col-auto"><div class="card-text small text-secondary mr-2">9/10</div></div><div class="col"><div class="progress progress-sm"><div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div></div></div></div></div></li><li class="nav-item mr-auto"><div style="min-width: 164px;"><div class="d-flex justify-content-left no-gutters align-content-center"><p class="card-text small text-secondary mb-0">Nutrient density <span class="badge badge-soft-warning">Ok</span><span class="card-text small text-secondary mb-0"> </span></p></div><div class="row align-items-center no-gutters"><div class="col-auto"><div class="card-text small text-secondary mr-2">6/10</div></div><div class="col"><div class="progress progress-sm"><div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div></div></div></div></div></li><li class="nav-item mr-auto"><div style="min-width: 164px;"><div class="d-flex justify-content-left no-gutters align-content-center"><p class="card-text small text-secondary mb-0">Insulin index <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p></div><div class="row align-items-center no-gutters"><div class="col-auto"><div class="card-text small text-secondary mr-2">21%</div></div><div class="col"><div class="progress progress-sm"><div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 21%;"></div></div></div></div></div></li></ul></div></div></div><div class="d-block" data-toggle="modal"><div class="row align-items-start"><div class="col-auto pl-3"><span class="avatar avatar-lg"><img src="https://d2jp17o0xc32jv.cloudfront.net/img/salmon_cheese_bites.jpg" alt="..." class="avatar-img rounded" style="object-fit: cover; height: 100%;"></span></div><div class="col-8 pr-0"><h4 class="card-title mb-1 name text-dark text-truncate pr-3">Salmon and Cream Cheese Bites</h4><h6 class="text-uppercase text-muted text-truncate my-2 pr-2">eggs - medium, milk, shredded/grated cheese, fresh or smoked salmon slices, dried dill, cream cheese</h6><h6 class="text-uppercase text-muted my-2 text-truncate pr-2">0.5 g total carbs (0.5 NET)</h6><ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0"><li class="nav-item mr-auto"><div style="min-width: 164px;"><div class="d-flex justify-content-left no-gutters align-content-center"><p class="card-text small text-secondary mb-0">Keto score <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p></div><div class="row align-items-center no-gutters"><div class="col-auto"><div class="card-text small text-secondary mr-2">9/10</div></div><div class="col"><div class="progress progress-sm"><div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div></div></div></div></div></li><li class="nav-item mr-auto"><div style="min-width: 164px;"><div class="d-flex justify-content-left no-gutters align-content-center"><p class="card-text small text-secondary mb-0">Nutrient density <span class="badge badge-soft-warning">Ok</span><span class="card-text small text-secondary mb-0"> </span></p></div><div class="row align-items-center no-gutters"><div class="col-auto"><div class="card-text small text-secondary mr-2">6/10</div></div><div class="col"><div class="progress progress-sm"><div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div></div></div></div></div></li><li class="nav-item mr-auto"><div style="min-width: 164px;"><div class="d-flex justify-content-left no-gutters align-content-center"><p class="card-text small text-secondary mb-0">Insulin index <span class="badge badge-soft-success">Good</span><span class="card-text small text-secondary mb-0"> </span></p></div><div class="row align-items-center no-gutters"><div class="col-auto"><div class="card-text small text-secondary mr-2">19%</div></div><div class="col"><div class="progress progress-sm"><div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 19%;"></div></div></div></div></div></li></ul></div></div></div></div></div></div>
+
+            </div>
+            <div class="col-10 col-lg-4 offset-lg-1 bg-green-light rounded-xl pr-lg-6 pb-lg-5 mb-5 mb-lg-0">
+              <div class="row justify-content-start">
+                <div class="col-12" style="z-index:99">
+                  <h2 class="mt-lg-5 ml-lg-3 mt-4 text-white display-4 text-center text-lg-left">I want to</h2>
+                  <a class="ml-lg-n6 d-block" href="#" data-toggle="modal" data-target="#onboardingConnect">
+                    <div class="card mx-n4">
+                      <div class="card-body">
+
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+
+                            <div class="btn btn-rounded-circle bg-soft-ocre">
+                              👍
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <h2 class="card-title mb-1 text-dark d-none d-lg-block">
+                              Lose fat
+                            </h2>
+                            <h2 class="card-title mb-1 h4 text-dark d-block d-lg-none">
+                              Lose fat
+                            </h2>
+
+                            <p class="card-text small text-muted mb-1">
+                              ...for good.
+                            </p>
+
+                          </div>
+                          <div class="col-auto">
+
+                            <span class="h2 fe fe-arrow-right text-dark mb-0"></span>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </a>
+                  <a class="ml-lg-n6 d-block" href="#" data-toggle="modal" data-target="#onboardingConnect">
+                    <div class="card mx-n4">
+                      <div class="card-body">
+
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+
+                            <div class="btn btn-rounded-circle bg-soft-red">
+                              💉
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <h2 class="card-title mb-1 text-dark d-none d-lg-block">
+                              Control blood sugar
+                            </h2>
+                            <h2 class="card-title mb-1 h4 text-dark d-block d-lg-none">
+                              Control blood sugar
+                            </h2>
+
+                            <p class="card-text small text-muted mb-1">
+                              ...for good.
+                            </p>
+
+                          </div>
+                          <div class="col-auto">
+
+                            <span class="h2 fe fe-arrow-right text-dark mb-0"></span>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </a>
+                  <a class="ml-lg-n6 d-block" href="#" data-toggle="modal" data-target="#onboardingConnect">
+                    <div class="card mx-n4">
+                      <div class="card-body">
+
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+
+                            <div class="btn btn-rounded-circle bg-blue-light">
+                              💪
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <h2 class="card-title mb-1 text-dark d-none d-lg-block">
+                              Gain muscle
+                            </h2>
+                            <h2 class="card-title mb-1 h4 text-dark d-block d-lg-none">
+                              Gain muscle
+                            </h2>
+
+                            <p class="card-text small text-muted mb-1">
+                              ...for good.
+                            </p>
+
+                          </div>
+                          <div class="col-auto">
+
+                            <span class="h2 fe fe-arrow-right text-dark mb-0"></span>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </a>
+                  <a class="ml-lg-n6 d-block" href="#" data-toggle="modal" data-target="#onboardingConnect">
+                    <div class="card mx-n4">
+                      <div class="card-body">
+
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+
+                            <div class="btn btn-rounded-circle bg-green-light">
+                              🤸‍
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <h2 class="card-title mb-1 text-dark d-none d-lg-block">
+                              Maintain body weight
+                            </h2>
+                            <h2 class="card-title mb-1 h4 text-dark d-block d-lg-none">
+                              Maintain body weight
+                            </h2>
+
+                            <p class="card-text small text-muted mb-1">
+                              ...for good.
+                            </p>
+
+                          </div>
+                          <div class="col-auto">
+
+                            <span class="h2 fe fe-arrow-right text-dark mb-0"></span>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <p class="small mb-4 text-center text-lg-right text-white">Already using Nutrita? <a class="text-dark" href="#" data-toggle="modal" data-target="#signIn">Sign in</a></p>
+            </div>
+          </div> <!-- / .row -->
+          <div class="row justify-content-end">
+            <div class="col-auto">
+              <img class="img-fluid mt-lg-n7" src="assets\img\Iso-Phone.png" alt="" width="800">
+            </div>
+          </div>
+      </div> <!-- / .container -->
+    </div> <!-- / .main-content -->
+    @@include("partials/footer-2.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+  </body>
+</html>

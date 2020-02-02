@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Nutrita Premium"
+    })
+  </head>
+  <body>
+    @@include("partials/topnav.html")
+    @@include("partials/modals.html")
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content my-5 my-lg-6">
+      <div class="container container pt-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-6"><div class="card mb-7" id="step0"><div class="card-header border-0" style="min-height: 48px;"><div class="row align-items-center"><div class="col small text-muted"></div><div class="col-auto small text-muted"><a class="text-muted" href="https://nutrita.app/" target="_blank" rel="noopener noreferrer">By<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABgCAYAAACzDERbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAnfSURBVHgB1V1LTFRXGP4Zic9AsfENKlo1HbQpPlKNLtSmmLSpiY+N6UbZtK7QTe3GRI2u7KLCynQh2IXpQqJJTU0kKbWJBhJtaaSQllZHhfqAFIRopdHQ813mwJ2Ze+eee///3pn5khMec5m5fPd/nf//zzlFZIixsbEy9WWXGlvVqFajUo0yEsLIq1G6NtRD3c+f0rPXo9Q3+sz6ffm0N6hiailVzZpHVTPnq59LSRBDaiTU6FDjuhqXi4qKhkz+sMjrAkVYpfpySI0DJEgUALIuDnRSy2APtQ8/NPqbqpnz6MCC9bSpdIk0iRpNapxQBCayXeRKXFLCjqlxmIQBws49uUVNj3+m4VcvKSj2zl1Dh8q3hEXgmWUdJ04k1h53lEBH4pJS1krj6iiKxse3qaHvJoswOyqUKh9YsI5qF2ygEJBQY7uT9GUQp0iD/bpEwqT1jQ7T53e/N1ZJvwCBF+L7wpC+hBq7FXkd9l+mEBeWpDX3d9KpB61iUuaG0inT6OjS9y0VFkaC0iRvgrikTfuFhElr6L1B9Uo1o0RdxWbL9gkjocZa7XVjthfgCCpJEEeUakZNGtDQe1NJ+A8kjEoa58iCJXFJFb1HggBpzf2/US4BlT29/EMSxjKorJa4YySIfCANgG09cvcqCcMKz4qStm2QhJAvpNkhLHmwccsgcbtICHAE+UYaMO7VxWyeNfUEcVtJALnwnn7Q+Oi2Cr5vkRC2grhqYqJNBbX5TJrGqfut1D4iEoBXg7hKYgAzgi/kDXBoOPj7JeuemagEcayMx8E/LlFvMgVUCBhWKStM/ZgoixEDsGtdL55SoaHdMi03iIPAxEHcC8GuuQGzC469C0zcJ93fUqHjyF9XrdxgEAQiDipaSHbNDfgfkFANAt/EFbqKpgMqG8TL+ibupHzWIecI4mWL/VyMqUvLPz0UNuKqIFNaPM36fljZoO6QPTe8LBzFxpLFxn+DSf6Y6cVbO74OzbYh5Y26wd45ayZI08Bn6hBCIHh1BFLvV9bsp5K0z3aDMXEhpWgskpCtRcnP9D7CItBP5tiIONwkwg9paYNKnl21y3rafoD7ONhz2SpeSwI1i5+qPzOSOiPn0Nx/R5w05MiuvLPfN2mAVivpkiCmY6bhiSdxkLbmAdkcW13FFpHE4tGl28WLMk0q/WQSFHsS1zb8QFTaapUtO1S+maQAuyQpeaZS50lcg2CwC3ePuqc0IHkbS81DCS+YSF1W4uDBpKQN4cbpt8QrThM4u2q3WBUfUndx4E7Wa7ISJyltaE8I4ghMAY8I8kqLp5MEWgb/zPq6K3EIOKWkDc4gTNI00AJWt0jGfurZhBtciWse6CQJQH0knYEXaheuF7N3jY/cnYQjcVYI0i9DHFQ0akjVUCF1bk7CkTiEIBKISkXTgc+UkPJsTsKRuMYnt4kLqOjeOaspVziwcIOIo3BzEhnEQU0l5oCI6HMhbRrwsrXz1xEXUFentFYGcecEqt2WtMk39/mGlNRdG8zMQWYQJ1HpDqGpLxCkpK7FizgJNZWQtl51H6jXto08tL7nQELqup/3Z8S0KalzJ5H0i00lS8gv7Osdul/0Z/QK4x+Pz5xrZYf9rm/QUsctMOHe7MmElEQmkpXcrvDr1Z/6cgrI5vpZ74D33jN3tS9zgLBi7a0G4gBBtT0mjdnfnEsa3tyUNJiFnXfOW+U5P93oUBn8DeofpulzSB13NgETZg+GY/YXuIAqmUCn4jl9JyAQ72FKnum9uQGC1fXv5P1OECdh33bMXul5jWT9wg95NW+uZDsJe2l0UuKYtcua2SuMihywaZIZZbyXSUEZ6goHw4FdQyaI49q3GgNpQ+JAKnlgh1cKSIOrrnZzFhv/RT9xYWJ8JebAbqjv9e53g7pyYNm5pNRZxPX+x1Od+Ky5nt4UD0e6DmqHidRBXSuY6XX9P1jEcdNIVTPme17TNiKTqsqGrudPPK/5YDZP6rrtEsd1DCZqGtZySzu6DEwO0uscaMdmEQfd5aBiunfQO/w63CWXQJ+BycG6fg4wJQSSzoEncVUzeE8xSpRP59m4CYnjxlRwCqatUfkACQcBzmLcdinTTEXF1GjKgyYoYc4gYNpY6xz8ID4rfHWOGxLHfYgjII7rGMoNbyKKVLppBgTqykHvS6WqYW8woCGR2skGTKeiLA5FpqpAmLUItHtFiUiJg8SFsbFKLgrfkRIHSPeyoecuyt4UDTZxfQESBGjHkvCyIA3v5RfcpAYQK2XHNP6dCxwFmp85Ng8tsReq9mWsiTCBxBQzxnXNfS+DB9Aw6KiK1fjIWEDKUG3itMRKrJEo5rZ/4umh+hN02gWjjrUOmMagwUU3NI7YJDmuJuawiyC4QuB+uSFYiRK2YoneClR//KyDcgIIhPrVGq6wCQqJZOriqUlV5ZJnkkDMF3CXwoMvaJflVbnq6tVonE9oYZZBdTRgEcdVs/Qqd75ColtBZ2Bi9h84N+S1LiAfILHWNp5KHC+dDBSCukqUJ1NUFeU9roMwLQrnCiiES/T+pagqUFO2grjgbEcRNiRWCdl7/yaIk5h4I3Ct/5u3g0wYkNruw87RpMQJdPMAwtuNsYF9hyW2+0D8Zu/Gitlf2CO0LgHbjeUDeSDt1H2Z7T4w3bNPK1PSSjuY7QF2gDzsEpgLm4fPPKkIkyINSM8wpxAHHZZMMkJtP+48H0prlxuwCSA+s+mxXGeUU4tuxi4QCCvC2HAKH1ynMrVh7Iqvu9ax4jGMjijk/dJnV47bZ0h0n2cDniDiIXzFeQ1+Zy5Y+9A+8sAiCZP2MO8V1TOnld0gDlvZlqXe2DPa2fkNRVU6BODRceCFW15PH4zROxrOTjfO9zSNvlvjuMXHEBaIJChtg1FLrRZtDmPba1fgIXVF+KBMkGUhXwLO4VenV7DSOB8WsuUKSKhm2baoA8T96PYq8vpR9HzkG+C86rIXkq7rLbuxQbzj7qx+F2IUOkCawY4Vs2PJ8wnOu10R4skceQdD0prAmfGxBJA8bIMWRS9vLqCL2wZ12sljCZJHitRnu1pLXr4s4pWEj+J2vT5+JdDRK5A6LAMqdLsH1fxy+Uem08zEso4Ta/VxU6zDfrD8EbWGQiMQklU7f4MVbhi2UCTI7bAfDb/HS1nrR1W+C4tM8p3AAIQBCfI6XkojyDFT2D0VNUtMtPPNgcDwI1HrtHGpBxJkeqCZRmXrV2X3th0+TuPnDvqC7gPxc6agJEBOfMY8iyxGvwmc5XG3QxxND208rsZ+CgiQp7MYIFVyX1+QhOz1e6qQMn4i5ryUfYR9Qse0ZwIf2pgO2zGh29R4l5jHhCLLgYwHitkgU2di3LIfWmoWJ5c/vQ1ypkzndi8FPib0f+guxSrvGKe8AAAAAElFTkSuQmCC" class="img-fluid d-inline-block ml-2 mr-1 align-middle" width="12px" alt="powered by Nutrita">Nutrita</a></div></div></div><div class="card-body text-center"><div class="row justify-content-center"><div class="col-12 col-xl-10"><img src="/assets/img/illustrations/happiness.svg" alt="..." class="img-fluid mt-2 mb-4 mx-auto" style="min-height: 133px; max-width: 192px;"><h1>Food calculator</h1><h2 class="text-secondary">The right food for the right goal</h2><p class="text-muted">What's your weight? Do you want to lose fat, control your blood sugars, or build some muscle? Nutrita is here to listen and give you some simple advices based on good science. Lets get started.</p></div></div></div><a href="#!"><div class="card-footer text-white text-center py-3 bg-green">Get Started</div></a></div></div>
+        </div>
+      </div><!-- / .container -->
+    </div> <!-- / .main-content -->
+    <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
+      <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
+      <a class="nav-link btn btn-lg btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" href="search-zero-state.html"><i class="fe fe-plus d-block text-white"></i></a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="settings.html"><i class="fe fe-settings d-block mb-2"></i>Settings</a>
+    </nav>
+
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
