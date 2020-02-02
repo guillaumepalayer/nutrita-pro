@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
+    <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+
+    <!-- Map -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
+
+    <!-- Theme CSS -->
+      
+    <link rel="stylesheet" href="./assets/css/theme.min.css" id="stylesheetLight">
+    <link rel="stylesheet" href="./assets/css/theme-dark.min.css" id="stylesheetDark">
+
+    <style>
+      body {
+        display: none;
+      }
+
+    </style>
+    
+    <!-- Title -->
+    <title>Nutrita Premium</title>
+    <meta name="description" content="Nutrita helps you make better food choices. To reach your selected goals check your food choices using our insulin index, keto index and our dynamic nutrient density score.">
+    <link rel="icon" type="image/png" href="assets/img/nutrita-logo-default.png">
+    <link rel="canonical" href="https://nutrita.app/"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Nutrita - Search foods' Nutrient Density, Keto Score & Insulin Index"/>
+    <meta property="og:description" content="Nutrita helps you make better food choices. To reach your selected goals check your food choices using our insulin index, keto index and our dynamic nutrient density score"/>
+    <meta property="og:url" content="https://nutrita.app/"/>
+    <meta property="og:site_name" content="Nutrita"/>
+    <meta property="og:image" content="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/02/nutrita-web-app-live.jpg"/>
+    <meta property="og:image:secure_url" content="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/02/nutrita-web-app-live.jpg"/>
+    <meta property="og:image:width" content="1024"/>
+    <meta property="og:image:height" content="538"/>
+    <meta property="og:image:alt" content="Nutrita_app_home_page"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description" content="Nutrita helps you make better food choices. To reach your selected goals check your food choices using our insulin index, keto index and our dynamic nutrient density score"/>
+    <meta name="twitter:title" content="Nutrita - Search foods' Nutrient Density, Keto Score & Insulin Index"/>
+    <meta name="twitter:image" content="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/12/Nutrita_app_home_page.jpg"/>
+    <meta name="twitter:creator" content="@nutrita_app"/>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-transparent border-0 fixed-top d-none d-lg-flex" id="topnav">
+      <div class="container">
+        <div class="row d-flex justify-content-between no-gutters w-100">
+          <div class="col d-flex align-items-center">
+            <!-- Brand -->
+            <a class="navbar-brand mr-3 d-flex align-items-center" href="index.html">
+              <i class="fe fe-arrow-left mr-5 h1 mb-0"></i>
+            </a>
+          </div>
+          <div class="col-lg-8 col-xl-8">
+            <!-- Search Form mobile -->
+            <a href="search-zero-state.html">
+              <form class="form-inline">
+                <div class="input-group input-group-merge input-group-lg w-100 rounded" data-toggle="lists" data-lists-values='["name"]'>
+                  <!-- Input -->
+                  <input type="search" class="form-control form-control-prepended bg-white pl-0" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+                  <div class="input-group-prepend">
+                    <div class="input-group-text bg-white pl-4 pr-4">
+                      <i class="fe fe-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </a>
+          </div>
+          <div class="col">
+            <div class="dropdown d-flex justify-content-end">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+                <a href="#!" class="dropdown-item">
+                  Send a feedback
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-transparent border-0 fixed-top d-flex d-lg-none" id="topnav">
+      <div class="container">
+        <div class="row w-100 d-flex justify-content-center no-gutters">
+          <div class="col-12 col-lg-10 col-xl-8 px-md-3">
+            <!-- Search Form mobile -->
+            <a href="search-zero-state.html">
+              <form class="form-inline">
+                <div class="input-group input-group-merge input-group-lg w-100 shadow-sm rounded">
+
+                  <!-- Input -->
+                  <input type="search" class="form-control form-control-prepended bg-white pl-0" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+                  <div class="input-group-prepend">
+                    <div class="input-group-text py-0">
+                      <button class="btn btn-link btn-sm text-secondary" type="button" name="button"><i class="h3 mb-0 fe fe-arrow-left d-flex d-lg-none"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </a>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </nav>
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content">
+      <div class="container mb-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8 mt-6 mt-lg-7">
+            <ul class="list-group mt-n5 mt-lg-n6 rounded-bottom bg-white mx-lg-n1 pt-3">
+              <li class="list-group-item pl-4 border-bottom-0">
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="search-results.html"><i class="fe fe-search text-muted mr-4 h3 mb-0 align-center"></i>Cras justo odio</a>
+              </li>
+              <li class="list-group-item pl-4 border-bottom-0">
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="search-results.html"><i class="fe fe-search text-muted mr-4 h3 mb-0 align-center"></i>Cras justo odio</a>
+              </li>
+              <li class="list-group-item pl-4">
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="search-results.html"><i class="fe fe-search text-muted mr-4 h3 mb-0 align-center"></i>Cras justo odio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <ul class="list-group bg-white mx-lg-n1">
+              <li class="list-group-item pl-4 border-bottom-0">
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="search-results.html"><i class="fe fe-tag text-muted mr-4 h3 mb-0 align-center"></i>Foods</a>
+              </li>
+              <li class="list-group-item pl-4">
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="search-results.html"><i class="fe fe-file-text text-muted mr-4 h3 mb-0 align-center"></i>Recipes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-8">
+            <div class="card-deck mb-4">
+              <div class="card bg-img-right mb-4 mb-lg-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/Brocoli.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Zinc
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card bg-img-right mb-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Low insulin load vegetables
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-deck mb-4">
+              <div class="card bg-img-right mb-4 mb-lg-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/cocoa,%20dry%20powder,%20unsweetened.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Nutrient dense
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card bg-img-right mb-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/natto.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Protein sources
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-deck mb-4">
+              <div class="card bg-img-right mb-4 mb-lg-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/tuna,%20raw.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Low sugar fruits
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card bg-img-right mb-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/bacon.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Protein sources
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-deck mb-4">
+              <div class="card bg-img-right mb-4 mb-lg-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/cheddar%20cheese,%20natural.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Zinc
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card bg-img-right mb-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Low insulin load vegetables
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-deck mb-4">
+              <div class="card bg-img-right mb-4 mb-lg-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/eggs.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Nutrient dense
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card bg-img-right mb-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/natto.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Protein sources
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-deck mb-4">
+              <div class="card bg-img-right mb-4 mb-lg-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/tuna,%20raw.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Low sugar fruits
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card bg-img-right mb-0" style="background-image: url(https://d3n85fzfv5z2vw.cloudfront.net/bacon.jpg);">
+                <a href="collection-foods.html">
+                  <div class="card-body mt-4">
+                    <div class="row align-items-bottom">
+                      <div class="col">
+                        <h4 class="card-title mb-0 text-dark name">
+                          Protein sources
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+    <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
+    <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="./assets/libs/list.js/dist/list.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
+    <script src="./assets/libs/chart.js/Chart.extension.js"></script>
+    <script src="./assets/libs/radial-progress-chart/dist/radial-progress-chart.min.js"></script>
+    <script src="./assets/libs/d3.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+
+  </body>
+</html>
